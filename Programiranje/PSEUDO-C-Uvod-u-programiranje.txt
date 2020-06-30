@@ -1,0 +1,357 @@
+
+
+DOMINIK CVETKOVSKI
+095 308 9202
+
+Javite se na wap sa porukom u kojoj 
+Cete napisati svoje ime i prezime
+
+
+Matematièki zapis
+5 + 8 = 13
+
+Programski
+13 = 5 + 8
+
+X + 8 = 13
+X = 13 – 8
+
+Prog.
+X = 5
+X + 8 = 13
+13 = x + 8
+
+X = 1
+Y = 2
+
+Z = x + y
+
+Int – za cijele brojeve (1, -2, 0, 9841789417074)
+Float – za decimalne brojeve (-2.7, 1.5, 7674.93219, 0, 1.0)
+
+Float X = 5.0f
+Int Y = 5
+
+- Varijabla – mjesto u memoriji rezervirano za pohranu podataka
+
+Int X = 3
+Int Y = 2
+Int Z = 0
+Koliki je Z ako se zbroje x i y?
+
+Z = x + y
+
+Float X = 5.6f
+Float R = 9.1f
+Float Mama = ?
+Rezultat oduzimanja X od R
+
+Mama = R – X
+
+Float x = 5.68f
+Int y = 4
+float Z = 0
+
+Koliki je zbroj x + y?
+Z = x + y
+
+Greška
+Int pp = 14
+Int rez = 0
+
+Rez = pp + 2.48f greska
+Rez = pp + 2 okej
+
+
+Toèka zarez „ ; “ se piše na kraju linije naredbe
+
+int x = 69;
+int weed = 420;
+int mars = 45789;
+int uho = 0;
+
+Koliko je vrijednost uho-a ako oduzmemo zbroj weed i x od marsa
+uho = mars – (x + weed);
+
+
+1. Zadatak, zbroji x i y ako je x 5, a y je 8
+int x = 5;
+int y = 8;
+int b = 0;
+b = x + y;
+2. Zadatak, kolika je razlika ako je x 19, a y 7.5?
+Razliku zapišite u x
+float x = 19f;
+float y = 7.5f;
+x = x – y;
+
+3. Zadatak, programski zapišite ovaj matematièki zapis: 9 + 11 = 20
+int x = 9;
+int y = 11;
+int z = 0;
+z = x + y;
+
+4. Zadatak, programski zapišite ovaj matematièki zapis: 9.11 + 4.20 = z
+float x = 9.11f;
+float y = 4.20f;
+float z = 0;
+z = x + y;
+z = 9.11f + 4.20f;
+
+5. Poèetna vrijednost varijable health je 100, primamo damage u vrijednosti od 17.6, kolika nam je konaèna vrijednost healtha?
+float health = 100f;
+float damage = 17.6f;
+health = health – damage;
+*NAPOMENA*
+health -= damage;
+
+6. Pretvorite u programski zapis sa vašim vrijednostima:
+x + mama – tata + krevet * sin = problem
+
+int x = 1;
+int mama = 1;
+int tata = 1;
+int krevet = 1
+int sin = 1;
+int problem = 0;
+*NAPOMENA*
+int problem;
+
+problem = x + mama – tata + krevet * sin;
+
+7. Pretvorite u programski zapis sa vašim vrijednostima:
+bomba * 2 + teroristi – majmun / 3.2 = wtf
+int bomba = 3;
+int teroristi = 4;
+int majmun = 7;
+float wtf = 0f;
+wtf = bomba * 2 + teroristi – majmun / 3.2f;
+
+8. Na poèetku imate 52 mane, iskoristili ste ability koji košta 4.5 mana i iskoristili ste ga 3 puta, koliko imate mane. Napišite programski.
+float mana = 52f;
+float ability = 4.5f;
+mana -= ability * 3;
+9. Primili ste damage i health vam je sa sto pao za 10, nakon toga nam se health regenerira za 2.8 i potom smo opet udareni. Napišite to programski.
+
+float health = 100f;
+int dmg = 10;
+float regen = 2.8f;
+
+health -= dmg;
+health += regen;
+health -= dmg;
+
+10. Ušli ste u borbu, u šanžeru imate 15 metaka od maksimalnih 20, ispucali ste ih 4, te ste potom reloadali šanžer. Napišite to programski.
+
+int fullAmmo = 20;
+int currentAmmo = 15;
+
+currentAmmo -= 4;
+currentAmmo = fullAmmo;
+
+11. U varijablu students spremate kolièinu uèenika u uèioni, prvo ih doðe 20, nakon toga ode 5 zatim doðe njih 4 potom ode 12 i nakraju se broj uèenika udvostruèio. Napišite programski.
+
+int students = 0;
+
+students += 20;
+students -= 5;
+students += 4;
+students -= 12;
+students *= 2;
+
+12. Na poèetku igraè ima 12 ponija, drugi igraè ima 10 ponija, koliko ponija imaju igraèi ako je prvi igraè uzeo drugome 4 ponija. Napišite programski.
+int playerOne = 12;
+int playerTwo = 10;
+
+playerTwo -= 4;
+playerOne += 4;
+13. Zbrojite x koji je 17.2 i y koji je 12.32. Rješenje napišite u varijabli „Maska“
+float x = 17.2f;
+float y = 12.32f;
+float maska = 0;
+
+maska = x + y;
+
+14. Poveæajte x koji je 5 za 5
+int x = 5;
+
+x += 5;
+15. Neka je x 6, a y je 7, zatim njihov zbroj uveæajte za vrijednost y. Rezultat spremate u z.
+int x = 6;
+int y = 7;
+int z = 0;
+
+z = (x+y) + y;
+
+16. Igraè ima 100 HP-a, pao je sa visine 8 metara i izgubio 20% HP-a. Zatim mu se HP, regenerirao za 8, i potom je igraè ponovo pokušao skoèiti, ali je pao sada sa visine 7 metara i izgubio 15.7% HP. Napišite ovo programski.
+float HP = 100f;
+HP -= 0.2f * HP;
+HP += 8;
+HP -= 0.157f * HP;
+
+17. Na poèetku je z 12, i prvo ga poveæamo za 3 zatim ga umanjimo za 2%. Napišite ovo programski.
+float z = 12f;
+
+z += 3;
+z -= 0.02f * z;
+18. Imaš 10 pokrajina, svaka daje 1 zlatnik, izgubio si 50% pokrajina, koliko zlatnika ti je ostalo poslije gubitaka (koliko æeš dobivati zlatnika)
+flaot pokrajine = 10;
+float porez = 1;
+float ukupnoNovaca = 0;
+
+ukupunoNovaca += pokrajine * porez;
+pokrajine *= 0.5f;
+ukupnoNovaca += pokrajine * porez;
+19. Na poèetku utakmice je bilo 100 navijaèa, od tih 12 je donjelo baklje, ako su izbacili svakog drugog navijaèa koji je donio baklju, koliko je ostalo navijaèa?
+int fans = 100;
+int hooligans = 12;
+fans -= hooligans / 2;
+20. Igraè ima 250 kristala, dao je 80 kristala, potom je prešao level i zaradio 70. Koliko ima kristala?
+int kristali = 250;
+
+kristali -= 80;
+kristali += 70;
+21. Baka je dala dedi 12 kuna (za pivu), a deda je veæ imao 12, došla je vrana i uzela baki 8 jabuka, a baka je imala ukupno 10 jabuka. Koliko deda ima kuna i koliko baka ima jabuka?
+int dedaPare = 12;
+int babaJabuke = 10;
+
+dedaPare += 12;
+babaJabuke -= 8;
+22. max inventory je 100, trenutno je pun 67, igraè izbaci 13 itema, skupi 45 i nakon pregleda loota, baci 33 itema.
+int maxInv = 100;
+int currentinv = 67;
+
+currentInv -= 13;
+currentInv += 45;
+currentInv -= 33,
+23. Max HP je 100, body shot je 20, imaš 80 HP, padneš i izgubiš 2%, neko te nabije za još 8%, regenerira ti se hp na max, primiš body shot i head shot koji je duplo veæi od body shot.
+float maxHP = 100f;
+float currentHP = 80f;
+int bodyShot = 20;
+int headShot = 0;
+
+headshot = 2 * bodyShot;
+currentHP *= 0.98f;
+currentHP *= 0.92f;
+currentHP = maxHP;
+currentHP -= bodyShot;
+currentHP -= headShot;
+
+24. Igraè pero ima 4 zlatne lopte, igraè marko ima 6 zlatnih lopti, igraè pero oteo je marku 1 zlatnu loptu, te mu je poslije toga marko uzvratio udarac i uzeo svoju loptu nazad i 2 markove. Koliko lopti ima marko a koliko pero, programski napiši.
+int pero = 4;
+int marko = 6;
+
+pero += 1; -> brži zapis kada je jedinica u pitanju je: pero++;
+marko -= 1; -> marko--;
+pero -= 3;
+marko += 3;
+
+25. Igraè ima 20 mane, iskoristio je vatrenu magiju od 5 mane, a nakon toga dvije ledene magije po 3 mane, koliko mu je mane ostalo?
+int mana = 20;
+int vatra = 5;
+int led = 3;
+
+mana -= vatra;
+mana -= (led * 2);
+26. U poèetku imas 100 HP, primis 25 dmg, i regeneris se za 8.
+int HP = 100; 
+int dmg = 25;
+int regen = 8;
+
+HP -= dmg;
+HP += regen;
+27. Igraè ima 100 HP, nakon udarca gubi 10%, nakon toga regenerirao za 5%
+float hp = 100f;
+
+hp -= 0.1f * hp;
+hp += 0.05f * hp;
+
+**PISANJE KOMENTARA**
+- obavezno
+- korisno za druge ljude kada èitaju vaš kod
+- korisno za vas ako niste neko vrijeme èitali kod
+- programeri koji ne koriste komentare „Prvo smo samo ja i bog znali kako ovaj kod radi, sada zna samo bog“
+- komentari se pišu sa „//“ i pišete ih iznad ili u redu na liniju ili metodu na koju se odnose
+npr.
+
+int health = 100; // varijabla za health
+int dmg = 25; //varijabla za dmg od enemy zombija
+int dmg2 = 30 ; //varijabla za dmg od enemy vampira
+
+//Igraè je primio udarac od neprijatelja
+health -= dmg;
+
+** UVIJETI **
+Što je uvijet?
+- uvjet je skup rijeèi koje govore što se treba ispuniti kako bi se izvršio red naredbi
+- primjeri uvijeta
+o AKO – IF
+o DOK – While
+o Kada – When (ovo ne postoji, primjera radi samo)
+- Kako zadovoljiti uvijet -> sa znakovima
+o == jednako je
+o != razlièito je
+o || ili
+o && i
+o > veæe
+o < manje
+o <= manje ili jednako
+o >= veæe ili jednako
+provjera if petlje
+if( 1+1 == 2) -> toèno
+if( 2+3 != 4) -> toèno
+if( 18 > 19) -> krivo
+if( 21 <= 21) -> toèno
+
+
+kao da je:
+ istina -> 1+1 = 2
+laž 5+5 = 11
+if( istina || laž) -> toèan
+if(istina || istina) -> toèno
+if( laž || istina) -> toèan
+if(istina && istina) -> toèan
+if (istina && laž) -> krivo
+if( laž && laž) -> kriv
+
+28. x je velièine 8, a y je velièine 13, ako je njihov zbroj manji od 50 neka se x poveæa za samoga sebe, ako je veæi ili jednak neka se y poveæa za samoga sebe
+
+int x = 8;
+int y = 13;
+
+if( x + y < 50 )
+{
+	x += x;
+}
+else if( x + y >= 50)
+{
+	y += y;
+}
+else
+{
+	y = y +x;
+}
+29. Vrijednost x je -3.6, a vrijednost y je 10, ako je njihov umnožak (množe se ) veæi od 100 neka se x uveæa za taj umnožak, ako je manji od 100 neka se y uveæa za umnožak, a ako su jednaki 100 onda neka se i x i y uveæaju za sami sebe.
+
+float x = -3.6f;
+float y = 10f;
+
+if(x*y > 100)
+{
+	x += x*y;
+}
+else if(x*y < 100)
+{
+	y += x * y;
+}
+else
+{
+	x += x;
+	y += y;
+}
+
+30. Igraèev health je 30. Regeneracija ce mu krenuti ako mu je health pao ispod 20 i poveæati æe se za 12.
+Igrac je prvo primio dmg od 9. Zatim je popio health potion koji mu je vratio 10 hp i potom je primio criticle strike koji mu je skinuo 26 hp. Pitanje je jel se igracu dogodio health regeneration i ako je kada. Napisite programski i oznacite komentarima kada se dogaða health reg. ako se dogodio.
+31. 
+
+
