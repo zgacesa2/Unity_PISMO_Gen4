@@ -289,7 +289,8 @@ o AKO – IF
 o DOK – While
 o Kada – When (ovo ne postoji, primjera radi samo)
 - Kako zadovoljiti uvijet -> sa znakovima
-o == jednako je
+o == jednako je (provjera vrijednosti jesu li jednake)
+o = dodjeli vrijednost
 o != razlièito je
 o || ili
 o && i
@@ -352,6 +353,577 @@ else
 
 30. Igraèev health je 30. Regeneracija ce mu krenuti ako mu je health pao ispod 20 i poveæati æe se za 12.
 Igrac je prvo primio dmg od 9. Zatim je popio health potion koji mu je vratio 10 hp i potom je primio criticle strike koji mu je skinuo 26 hp. Pitanje je jel se igracu dogodio health regeneration i ako je kada. Napisite programski i oznacite komentarima kada se dogaða health reg. ako se dogodio.
-31. 
+
+31. Igrac jedan i dva imali su 100 HP, igrac dva udario je igraca jedan te mu oduzeo 25 HP, igrac jedan kontra napadom oštetio je igraca dva za 14 hp te regenerirao 10 svog HP, koliko koji igrac ima HP, programski?
+
+Pravilno:
+_playerOne
+playerOne-> Player One
+PlayerOne
+player_1
+player_One
+__________
+Ok:
+player1
+playERonE
+PLAYERone
+__________
+Nepravilno:
+1player
+1_player
+
+int playerOne = 100;
+int playerTwo = 100;
+
+playerOne -= 25;
+playerTwo -= 14;
+playerOne += 10;
+
+32. Pokemon evoluirao kada donese level 16 za koji mu je potreban 4561 XP, trenutni lvl 1 ima 0 XP, odradio je 25 borbi gdje je dobio 25 XP i nakon toga još 25 gdje je u svakoj dobio 93 XP, provjeriti konacni XP i jel evuluirao, ako ako ne evoluira gubi sav XP.
+
+int pokemonLvl = 1;
+int pokemonXP = 0;
+
+pokemonXP += 25 * 25 + 25 * 93;
+if(pokemonXP >= 4561)
+{
+	pokemonLvl += 15;
+}
+else
+{
+	pokemonXP = 0;
+}
+
+33. Kapetan Miki ima 10 HP, ako prime vise od 5 dmg kapetan Miki se naljuti i njegov HP bude 20.
+
+int HP = 10;
+int dmg = 0;
+
+if(dmg > 5)
+{
+	HP = 20;
+}
+
+34. A je jacine 5 B je jacine 17 ako je njihova razlika veca od 10 neka se broj A poveca za B, a ako je manja ili jednaka neka se B poveca za A
+
+int A = 5;
+int B = 17;
+
+if(A - B > 10)
+{
+	A += B;
+}
+else if(A - B <= 10)
+{
+	B += A;
+}
+else
+{
+	B = B + A;
+}
+
+
+35. Ako je broj manji od 10, broj uvecaj za 20, a ako je broj veci od 10 umanji ga za 9
+
+
+int broj = 2;
+
+if(broj < 10)
+{
+	broj += 20;
+}
+else if(broj > 10)
+{
+	broj -= 9;
+}
+
+36. U šumi je 6 elfova, 5 gnomova i 10 orkova, ako je broj elfova i gnomova manji ili jednak orkovima spawna se još toliko elfova, a ako je njihov zbroj veci, orkovi ce pojesti 2 gnoma
+
+int elf = 6;
+int gnom = 5;
+int ork = 10;
+
+if(elf + gnom <= ork)
+{
+	elf += elf;
+}
+else 
+{
+	gnom -= 2;
+}
+
+
+37. Pocetna vrijednost varijable je 830, X je 69, a Y 538, ukoliko je umnožak x i y manji od 1000, pocetna vrijednost varijable uveca se za 100. Ukoliko je umnožak veci, pocetna vrijednost varijable se smanji za 100.
+
+int pocetna = 830;
+int x = 69;
+int y = 538;
+
+if(x * y < 1000)
+{
+	pocetna += 100;
+}
+else if(x * y > 1000)
+{
+	pocetna -= 100;
+}
+
+38. super Mario je imao 3 života, izguio je 2 života, dobio je jedan život tokom nivoa, i dobio jedan život sa prelaskom nivoa, koliko ima života napiši programski.
+
+int marioLife = 3;
+
+marioLife -= 2;
+marioLife += 1;
+marioLife += 1;
+
+39. X je 15, Y je 100, ako je x izmedu 13 i 19 (inkluzivno - ukljucujuci 13 i 19) povecaj y za 20%. Ako nije onda smanji y za 10%.
+
+int x = 15;
+float y = 100;
+
+if( x > 12 && x < 20)
+{
+	y += y * 0.2f;
+}
+else
+{
+	y -= y * 0.1f;
+}
+
+npr. AKO HOCETE DOBITI CIJELI BROJ A MNOŽITE(ILI BILO ŠTA DRUGO) SA DECIMALAMA.
+
+int x = 15;
+int y = 67;
+
+if( x > 12 && x < 20)
+{
+	y += (int)(y * 0.2f);
+}
+else
+{
+	y -= (int)(y * 0.1f);
+}
+
+
+40. x je velicine 5, a y velicine 15, ako je zbroj manji od 30, neka se x poveca za samnog sebe, a ako je veci ili isti onda se y poveca za samoga sebe
+
+int x = 5;
+int y = 15;
+
+if(x + y < 30)
+{
+	x += x;
+}
+else if(x + y >= 30)
+{
+	y += y;
+}
+
+41. Cilj igre je skupiti 4 objekata, prsten, pehar, zlatnik, dijamant.
+Sa svakim skupljenim itemom aktivira se jedan boss, kada se skupe svi itemi igra je predena.
+
+int items = 0;
+int itemsToCollect = 4;
+int prsten = 0;
+int pehar = 0;
+int zlatnik = 0;
+int dijamant = 0;
+int boss = 0;
+
+if(prsten == 1)
+{
+	boss++;
+	items++;
+}
+if(pehar == 1)
+{
+	boss++;
+	items++;
+}
+if(dijamant == 1)
+{
+	boss++;
+	items++;
+}
+if(zlatnik == 1)
+{
+	boss++;
+	items++;
+}
+if(items == itemsToCollect)
+{
+	//Kraj igre
+	boss = 0;
+}
+
+
+42. Vrijednost nice je 69, vrijednost blaze je 420, ako je zbroj tih vrijednosti pomnožen za 2 veci od 1300 neka se nice podupla, a ako je manji ili jednak 1250 neka se blaze podupla.
+
+int nice = 69;
+int blaze = 420;
+
+if((nice + blaze) * 2 > 1300)
+{
+	nice *= 2;
+}
+else if((nice + blaze) * 2 <= 1250)
+{
+	blaze *= 2;
+}
+
+
+43. Programski zapisi 11.79 + 9.01 = 19.80
+
+float x = 11.79f;
+flaot y = 9.01f;
+float rez = 0;
+
+rez = x + y - 1;
+
+44. HP je 100 primimo dmg 23, popijemo healthpotion od 15
+
+int HP = 100;
+
+HP -= 23;
+HP += 15;
+
+45. Vi imate 15 €, vaš frend ima 25€ i vaš treci frend ima 10.5€ zajedno odlucite kupiti bugati vayrona koji košta 2500000€. Ako osoba koja ima najviše novaca ima duplo više novaca od osobe koja ima najmanje novaca. Onda placa pola cijene. A ostali djele ostatak. Ako to nije slucaj onda svi djele jednako.
+
+float my = 15f;
+float friendOne = 25f;
+flaot friendTwo = 10.5f;
+int bugatti = 2500000;
+
+if(my > friendOne && my > firendTwo)
+{
+	if(firendOne > friendTwo)
+	{
+		if(my >= friendTwo * 2)
+		{
+			my -= bugatti * 0.5f;
+			firendOne -= bugatti * 0.25f;
+			friendTwo -= bugatti * 0.25f;
+		}
+		else
+		{
+			my -= bugatti / 3;
+			friendOne -= bugatti / 3;
+			firendTwo -= bugatti / 3;
+		}
+	}
+	else if(firendOne < friendTwo)
+	{
+		if(my >= friendOne * 2)
+		{
+			my -= bugatti * 0.5f;
+			firendOne -= bugatti * 0.25f;
+			friendTwo -= bugatti * 0.25f;
+		}
+		else
+		{
+			my -= bugatti / 3;
+			friendOne -= bugatti / 3;
+			firendTwo -= bugatti / 3;
+		}
+	}
+}
+if(friendOne > my && friendOne > firendTwo)
+{
+	if(my > friendTwo)
+	{
+		if(firendOne >= friendTwo * 2)
+		{
+			firendOne -= bugatti * 0.5f;
+			my -= bugatti * 0.25f;
+			friendTwo -= bugatti * 0.25f;
+		}
+		else
+		{
+			firendOne -= bugatti / 3;
+			my -= bugatti / 3;
+			firendTwo -= bugatti / 3;
+		}
+	}
+	else if(firendTwo > my)
+	{
+		if(my >= friendOne * 2)
+		{
+			firendOne -= bugatti * 0.5f;
+			my -= bugatti * 0.25f;
+			friendTwo -= bugatti * 0.25f;
+		}
+		else
+		{
+			firendOne -= bugatti / 3;
+			my -= bugatti / 3;
+			firendTwo -= bugatti / 3;
+		}
+	}
+}
+else
+{
+	//Frend dva ima najvise, ali ima vec kredit pa nikom nista
+}
+
+
+46. x je 50, y je 100, ako je njihov zbroj veci od trostruke vrijednosti x onda neka se x podupla, ako je manji neka se y udvostruci, a ako su jednkai neka se oba kvadriraju
+
+int x = 50;
+int y = 100;
+
+if(x + y > 3 * x)
+{
+	x *= 2;
+}
+else if( x + y < 3 * x)
+{
+	y *= 2;
+}
+else
+{
+	x *= x;
+	y *= y;
+}
+
+47. Igrac ima 100 HP, ako mu hp padne ispod 75 regenereira 10, a ako padne ispod 25 i igrac ostane živ, regenerira 25. Igrac primi 55 dmg, zatim primi opet 55 dmg, koliko se healtha igracu regeneriralo.
+
+int hp = 100;
+int dmg = 55;
+int regTotal = 0;
+
+hp -= dmg;
+//provjera petlje
+hp -= dmg;
+//provjera petlje
+
+if(hp < 75 && hp > 0)
+{
+	if(hp < 25)
+	{
+		hp += 25;
+		regTotal += 25;
+	}
+	else
+	{
+		hp += 10;
+		regTotal += 10;
+	}
+}
+
+48. Prvi vozac ima 10 kockica drugi 13, kada se oni sudare onaj koji ima manje ukrade drugome jednu kockicu
+
+int prvi = 10;
+int drugi = 13;
+
+if(prvi > drugi)
+{
+	priv--;
+	drugi++;
+}
+else if(drugi > prvi)
+{
+	prvi++;
+	drugi--;
+}
+
+49. Varijabla x je 15, varijabla y je dva puta veca od x, ako je zbroj x i y manji od 50, x se povecava za y, ako je zbroj veci od 50 od x se oduzima y, a ako je zbroj jednak, onda x dobiva vrijednost y
+
+int x = 15;
+int y = 0;
+
+y = x * 2;
+var rez = x + y;
+if(rez < 50)
+{
+	x += y;
+}
+else if( rez > 50)
+{
+	x -= y;
+}
+else if(rez == 50)
+{
+	x = y;
+}
+
+
+*NAPOMENA*
+var - vrsta varijable koja se prilagodava unosu
+
+
+50. Vozimo se 100 na sat. Ukoliko usporimo ispod 100, ubrzamo za 1.
+
+int brzina = 100;
+int ubrzanje = 1;
+
+if(brzina <= 99)
+{
+	brzina += ubrzanje;
+}
+
+
+**METODE**
+
+- public - ispred vrste varijable omogucava da mi kao developeri možemo unositi i mjenjati vrijednosti u Unityu, u inspectoru
+- private - nije vidljivo u inspectoru (U Unityu) niti je dostupno iz drugih skripti
+
+- Metoda
+	- metoda je skup naredbi koje se trebaju dogoditi u odredenim uvijetima
+	- svaka metoda ima svoje uvijete
+*Kljucne metode u Unityu
+
+- Awake - odvija se prije 0 (nultog) framea, dogada se prije stavaranja bilokakvih objekata na sceni, izvšava se samo jedanput
+
+- Start - izvršava se netom prije prvoga framea (krajem nultog framea) i izvršava se samo jedanput
+
+- Update - svaki frame jedan put se izvrši
+
+**Debugiranje**
+- Osnovno - Debug.Log("")
+- Debug - debugiraj (provjeri)
+- Log - ispiši u konzoli
+- ("") - unutar navodnika što treba ispisati
+
+
+1. U startu neka se zbroje 2 javna broja. I neka se ispiše u konzoli njihov zbroj.
+public int prviBroj;
+public int drugiBroj;
+int zbroj;
+
+void Start()
+{
+	zbroj = prviBroj + drugiBroj;
+	Debug.Log(zbroj);
+}
+
+
+2. Zbrojite u startu x koji je 17.2 i y koji je javan broj, neka se rezultat sprema u varijablu "banana" i neka se ispiše u konzoli.
+
+float x = 17.2f;
+public float y;
+float banana;
+
+void Start()
+{
+	banana = x + y;
+	Debug.Log(banana);
+}
+
+3. Povecajte x koji je 5 za 5 svaki frame.
+
+int x = 5;
+
+void Update()
+{
+	x += 5;
+}
+
+4. Neka je x 6, a y je 7 i njihov zbroj neka se izracuna u startu, a onda svaki frame neka se rezultat uveca za x.
+
+int x = 6;
+int y = 7;
+int rez = 0;
+
+void Start()
+{
+	rez = x + y;
+}
+
+void Update()
+{
+	rez += x;
+}
+
+5. Neka je x 8, a y je javni broj i njihov broj neka se izracuna u startu, a onda svaki frame neka se rezultat uveca za x podjeljeno sa 2.
+
+int x = 8;
+public int y;
+float rez = 0;
+
+void Start()
+{
+	rez = x + y;
+}
+
+void Update()
+{
+	rez += (x / 2);
+}
+
+6. Ako je vrijednost x -3.6, a vrijednost y je javna. Ako je zbroj veci od 20 neka se ispiše "To legendo", a ako je manji ili jednak neka se ispiše "Falio si"
+
+float x = -3.6f;
+public float y = 0;
+float zbroj = 0;
+
+//Ovdje može biti awake ili start svejedno je
+void Awake()
+{
+	zbroj = y + x;
+	if(zbroj > 20)
+	{
+		Debug.Log("To legendo");
+	}
+	else
+	{
+		Debug.Log("Falio si");
+	}
+}
+
+7. U startu zbrojite dvije javne vrijednosti. Neka se svaki frame x povecava za 5% koliko je y. Svaki frame ponovo zbrojite x i y te ispišite vrijednost zbroja.
+
+public float x = 10f;
+public float y = 20f;
+float rez = 0f;
+
+void Start()
+{
+	rez = x + y;
+}
+
+void Update()
+{
+	x += 0.05f * y;
+	rez = x + y;
+	Debug.Log(rez);
+}
+
+8. Napišite u metodi start "ja sam start", u metodi awake neka se ispište "Ja sam mali Awake", te u konacnici neka se svaki frame ispisuje "Moje ime je Medo Lino"
+
+void Awake()
+{
+	Debug.Log("Ja sam mali Awake");
+}
+
+void Start()
+{
+	Debug.Log("ja sam start");
+}
+
+void Update()
+{
+	Debug.Log("Moje ime je Medo Lino");
+}
+
+9. Povecavajte varijablu X za jedan svaki frame. Neka se svaki frame ispiše "Ja sam " + x
+
+public int x = 0;
+
+void Update()
+{
+	x++;
+	Debug.Log("Ja sam " + x);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
