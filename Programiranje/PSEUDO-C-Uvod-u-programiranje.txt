@@ -915,15 +915,67 @@ void Update()
 	Debug.Log("Ja sam " + x);
 }
 
+DZ - papirici 
 
+1)
+int varijabla1 = 1;
+float varijabla2 = 2.5f;
 
+varijabla1 = (int)varijabla2;
 
+2)
+objasni razliku izmedu II (OR/ILI) i &&(and/i) sa primjerom if-else u start metodi
 
+public int x=5;
+public int y=12;
+void Start ()
+{ 
+	if(x>6 || y>10)
+	{
+		x+=1;
+	}
+	else if(x<6 && y<10)
+	{
+		x--;
+	}
 
+}
 
+3)
+što znaci !=
 
+4)
+int x = 10;
+int y = 12;
 
+void Start()
+{
+	if(x == y)
+	{
+		Debug.Log("Jednako je");
+	}
+	else if(x != y)
+	{
+		Debug.Log("Razlicito je");
+	}
+}
 
+5)
+Ivica ima 5 jabuka, Marica ima 2 jabuke, Ivica joj uzme 1 jabuku. Osramoti ga ''JAVNO'' i provjeri da li je smrad?
 
+public int Ivica = 5;
+public int Marica = 2;
 
+void Start ()
+{
+	Ivica ++;
+	Marica --;
+	if(Ivica > 5)
+	{
+		Debug.Log("Ivica je smrad.");
+	}
+}
+
+Dalje zadatci
+10)
 
