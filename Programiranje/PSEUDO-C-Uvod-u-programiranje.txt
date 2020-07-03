@@ -976,6 +976,131 @@ void Start ()
 	}
 }
 
-Dalje zadatci
-10)
+Dz zadatci 2.
+1)
+
+Definiraj 2 public floata, ako su brojevi jednaki do 3 decimale ispiši "jednaki su", ako nisu jednaki do 3 decimale ispiši "nisu".
+
+PRIMJERI:
+
+-1.1234 i 1.1235 -- ispisati jedanki su
+-2.2345 i 2.2355 -- ispisati nisu 
+
+	public float x;
+	public float y;
+2)
+x=7
+Treba objavit javno.
+Napiši to u programu.
+
+public int x = 7;
+void Start()
+{
+	Debug.Log(x);
+}
+
+3)
+U startu zbroji javnu vrijednost x i vrijednost y koja je 6. Ako je njihov zbroj 10, neka se svaki frame ispise "Moze" a ako njihov zbroj nije 10, neka se svaki frame ispise "Ne moze".
+
+public int x;
+int y = 6;
+int zbroj = 0;
+
+void Start() 
+{
+	zbroj = x + y;
+}
+
+void Update() 
+{
+	if(zbroj == 10) 
+	{
+		Debug.Log("Moze");
+	}
+	else 
+	{
+		Debug.Log("Ne moze");
+	}
+}
+
+Nastavak C# pseudo
+
+1) napišite skriptu gdje se moze zbrajati dva dva javna broja u metodi start
+
+public float a = 1f;
+public float b = 2f;
+float c;
+
+void Start()
+{
+	c = a + b;
+	Debug.Log("Rezultat zbrajanja je: " + c);
+}
+
+
+Što je to BOOL?
+- Bool je vrijednost koja pohranjuje u sebe jel nešto tocno ili netocno
+- Može biti samo TRUE ili FALSE
+- Tehnicki: 0 ili 1
+- npr. 
+bool banana = false;
+bool died = true;
+bool gameEnded = true;
+
+2) Neka se zbrajaju dva javna broja, ako je njihov zbroj veci od 15 neka bool endGame postane true, ako su manji ili jednaki neka je false. Ako je endGame true onda neka se ispiše u konzoli da je igra završena, a ako je false neka ispiše preživio si
+
+public int x;
+public int y;
+public bool endGame = false; //Ako se ne definira bool automtski je false
+
+void Start()
+{
+	if(x + y > 15)
+	{
+		endGame = true;
+	}
+	else
+	{
+		endGame = false;
+	}
+	CheckIfEndGame();
+}
+
+void CheckIfEndGame()
+{
+	if(endGame == true)
+	{
+		Debug.Log("Igra završena");
+	}
+	else
+	{
+		Debug.Log("Preživio si");
+	}
+}
+
+3) Neka su dva javna broja flaot vrijednosti, za pocetne vrijednosti neka budu 12.3 i 18.2. Postavite i privatni bool banana. Banana je na pocetku false. Ako je umnožak dva broja veci ili jednak od 100 neka banana postane true i u konzoli neka ispiše "Banana je pojedena", ako je banana false neka se ispiše "Banana je citava". Takoder za uvijet banane mora i umnožak ta dva broja biti manji od 100.
+
+4) Napišite skriptu gdje cete imati start metodu i metodu naziva vašeg imena. U startu neka se zove metoda vašeg imena i neka se u konzoli napiše "Moje ime je medvjedic Lino".
+
+5) Imajte javni bool playMe koji je u pocetku true, ako je on true neka se u startu pozove metoda PlayMeMadafaka koja ce ispisati u konzoli "Game started", a ako je playMe false neka se u konzoli ispiše "Game has not started properly"
+
+6) Imajte dva bool-a jedan int i jedan float vašega izbora. U startu neka se radi provjera jesu li brojevi (svaki zasebno) jednaki jedan drugome, ako jesu neka prvi bool postane true a drugi false, a ako ta dva broja nisu jednaka neka drugi bool postane true, a prvi false.
+
+7) Napišite skriptu koja u sebe u nosi 4 javna floata. U startu se radi provjera matematickog zapisa:
+ "x + y * (a / b) - x / a * 18 * b - x + y = rez". Ako je rezultat veci od drugog matematickog zapisa:
+"x - y / (a * b) + x * a / 18 / b + x - y + 23 = rez" onda neka se u updateu rezultat povecava za jedan i ispisuje "Ja sam rezultat: " + rez.
+
+8) Imajte javnu vrijednost u koju upisujete koliko godina imate. Zatim neka se radi provjera ako imate više od 18 ili manje godina. Ako imate više neka se ispiše "Ti si punoljetan i imaš " + broj godina + ". A to je ustvari: " + broj godina pretvoren u mjesece. (broj godina * 12)
+
+9) Napišite skritpu gdje imate jedan bool i jedan javni broj. Ako je taj javni broj razlicit od 18 onda neka se pozove metoda MjenjajMe koja mjenja vrijednost bool-a, vrijednost mjenja tako da ako je bool bio true pretvara ga u false, a ako je bio false pretvara ga u true.
+
+10) Napišite skriptu koja množi dva javna broja. Ako je njihov umnožak razlicit od 100 ili je veci od 0 onda neka se pozove druga metoda naziva JaSamMetodaDva u kojoj ce se raditi djeljenje prvog broja sa drugim i ako je njihov rezultat manji od 100 i vece od 0 onda neka se ipiše u konzoli "Ja sam visok", a ako je bilokoje drugo riješenje neka se u konzoli ispiše "Ja sam nizak".
+
+
+
+
+
+
+
+
 
