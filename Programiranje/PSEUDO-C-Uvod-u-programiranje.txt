@@ -1080,11 +1080,76 @@ void CheckIfEndGame()
 
 3) Neka su dva javna broja flaot vrijednosti, za pocetne vrijednosti neka budu 12.3 i 18.2. Postavite i privatni bool banana. Banana je na pocetku false. Ako je umnožak dva broja veci ili jednak od 100 neka banana postane true i u konzoli neka ispiše "Banana je pojedena", ako je banana false neka se ispiše "Banana je citava". Takoder za uvijet banane mora i umnožak ta dva broja biti manji od 100.
 
-4) Napišite skriptu gdje cete imati start metodu i metodu naziva vašeg imena. U startu neka se zove metoda vašeg imena i neka se u konzoli napiše "Moje ime je medvjedic Lino".
+public float x = 12.3f;
+public float y = 18.2f;
+private bool banana = false;
+
+void Awake()
+{
+	if( 100 <= x * y)
+	{
+		banana = true;
+		Debug.Log("Banana je pojedena");
+	}
+	else if(banana == false && x * y < 100)
+	{
+		Debug.Log("Banana je citava");
+	}
+}
+
+4) Napišite skriptu gdje cete imati start metodu i metodu naziva vašeg imena. U startu neka se pozove metoda vašeg imena i neka se u konzoli napiše "Moje ime je medvjedic Lino".
+
+void Start()
+{
+	Nikola();
+}
+
+void Nikola()
+{
+	Debug.Log("Moje ime je medvjedic Lino");
+}
 
 5) Imajte javni bool playMe koji je u pocetku true, ako je on true neka se u startu pozove metoda PlayMeMadafaka koja ce ispisati u konzoli "Game started", a ako je playMe false neka se u konzoli ispiše "Game has not started properly"
 
-6) Imajte dva bool-a jedan int i jedan float vašega izbora. U startu neka se radi provjera jesu li brojevi (svaki zasebno) jednaki jedan drugome, ako jesu neka prvi bool postane true a drugi false, a ako ta dva broja nisu jednaka neka drugi bool postane true, a prvi false.
+public bool playMe = true;
+
+void Start()
+{
+	if(playMe == true)
+	{
+		PlayMeMadafaka();
+	}
+	else if(playMe == false)
+	{
+		Debug.Log("Game has not started properly");
+	}
+}
+
+void PlayMeMadafaka()
+{
+	Debug.Log("Game started");
+}
+
+6) Imajte dva bool-a jedan int i jedan float vašega izbora. U startu neka se radi provjera jesu li brojevi (svaki zasebno) jednaki jedan drugome, ako jesu neka prvi bool postane true, a drugi false, a ako ta dva broja nisu jednaka neka drugi bool postane true, a prvi false.
+
+int x = 7;
+float y = 7.5f;
+bool jedan = false;
+bool dva = true;
+
+void Start() 
+{
+	if(x == y)
+	{
+		jedan = true;
+		dva = false;
+	}
+	else if(x != y)
+	{
+		jedan = false;
+		dva = true;
+	}
+}
 
 7) Napišite skriptu koja u sebe u nosi 4 javna floata. U startu se radi provjera matematickog zapisa:
  "x + y * (a / b) - x / a * 18 * b - x + y = rez". Ako je rezultat veci od drugog matematickog zapisa:
@@ -1096,8 +1161,7 @@ void CheckIfEndGame()
 
 10) Napišite skriptu koja množi dva javna broja. Ako je njihov umnožak razlicit od 100 ili je veci od 0 onda neka se pozove druga metoda naziva JaSamMetodaDva u kojoj ce se raditi djeljenje prvog broja sa drugim i ako je njihov rezultat manji od 100 i vece od 0 onda neka se ipiše u konzoli "Ja sam visok", a ako je bilokoje drugo riješenje neka se u konzoli ispiše "Ja sam nizak".
 
-
-
+11) Imajte javni bool ako je taj bool jednak true na startu neka ispiše "Volim mrkvu" a ako je bool razlicit od true onda neka ispiše "Volim borovnicu".
 
 
 
