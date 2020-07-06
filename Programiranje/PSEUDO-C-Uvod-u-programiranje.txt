@@ -1155,13 +1155,258 @@ void Start()
  "x + y * (a / b) - x / a * 18 * b - x + y = rez". Ako je rezultat veci od drugog matematickog zapisa:
 "x - y / (a * b) + x * a / 18 / b + x - y + 23 = rez" onda neka se u updateu rezultat povecava za jedan i ispisuje "Ja sam rezultat: " + rez.
 
+public float a;
+public float b;
+public float x;
+public float y;
+float rez1;
+float rez2;
+
+void Start()
+{
+	rez1 = x + y * (a / b) - x / a * 18 * b - x + y;
+	rez2 = x - y / (a * b) + x * a / 18 / b + x - y + 23;
+}
+void Update()
+{
+	if(rez1 > rez2)
+	{
+		rez1++;
+		Debug.Log("Ja sam rezultat" + rez1);
+	}
+}
+
 8) Imajte javnu vrijednost u koju upisujete koliko godina imate. Zatim neka se radi provjera ako imate više od 18 ili manje godina. Ako imate više neka se ispiše "Ti si punoljetan i imaš " + broj godina + ". A to je ustvari: " + broj godina pretvoren u mjesece. (broj godina * 12)
+
+public int x = 24;
+
+void Start()
+{
+	if (x > 18 || x < 18)
+	{
+		if (x > 18)
+		{		
+			Debug.Log("Ti si punoljetan i imaš " + x +". A to je ustvari: " + (x * 12));
+		}	
+	}
+}
+
+
 
 9) Napišite skritpu gdje imate jedan bool i jedan javni broj. Ako je taj javni broj razlicit od 18 onda neka se pozove metoda MjenjajMe koja mjenja vrijednost bool-a, vrijednost mjenja tako da ako je bool bio true pretvara ga u false, a ako je bio false pretvara ga u true.
 
+private bool a = false;
+public int x = 0;
+
+void Start()
+{	
+	if(x != 18)
+	{
+		MjenjajMe();
+	}
+}
+
+void MjenjajMe()
+{
+	if(a == false)
+	{
+		a = true;
+	}
+	else
+	{
+		a = false;
+	}
+}
+
+
+
 10) Napišite skriptu koja množi dva javna broja. Ako je njihov umnožak razlicit od 100 ili je veci od 0 onda neka se pozove druga metoda naziva JaSamMetodaDva u kojoj ce se raditi djeljenje prvog broja sa drugim i ako je njihov rezultat manji od 100 i vece od 0 onda neka se ipiše u konzoli "Ja sam visok", a ako je bilokoje drugo riješenje neka se u konzoli ispiše "Ja sam nizak".
 
+public float x;
+public float y;
+float umnozak = 0f;
+
+void Start()
+{
+	umnozak = x * y;
+	if(umnozak != 100 || umnozak > 0)
+	{
+		JaSamMetodaDva();
+	}
+}
+
+void JaSamMetodaDva()
+{
+	if((x / y) < 100 && (x / y) > 0)
+	{
+		Debug.Log("Ja sam visok.");
+	}
+	else
+	{
+		Debug.Log("Ja sam nizak.");
+	}
+}
+
 11) Imajte javni bool ako je taj bool jednak true na startu neka ispiše "Volim mrkvu" a ako je bool razlicit od true onda neka ispiše "Volim borovnicu".
+
+public bool voce;
+
+void Start()
+{   
+	if ( voce == true)
+	{
+		Debug.Log ("Volim mrkvu.");
+	}
+	else
+	{
+		Debug.Log ("Volim borovnicu."); 
+	}
+}
+
+
+
+
+
+DZ Zadatci:
+1) Što ce se ispisati?
+	
+public int x = 10;
+public int y = 3;
+
+void Start() 
+{
+	Debug.Log(x/y);
+}
+
+Matematicki 10/3 = 3.333333 ali buduci je int, program ce ispisati samo 3
+
+2) Uvecaj int x za 1, svaki drugi frame.
+
+int x = 0;
+int brojac = 1;
+
+void Update()
+{
+	if(brojac % 2 == 0)
+	{
+		x++;
+	}
+
+	brojac++;
+}
+
+3) x i y su public brojevi. Ako je njihov zbroj manji od 5 u konzoli piši "mužu, prevarila sam te", a ako je veci u konzili ispiši "dijete je tvoje".
+
+public int x;
+public int y;
+int zbroj = 0;
+
+void Start()
+{
+	zbroj = x + y;
+
+	if(zbroj < 5)
+	{
+		Debug.Log("mužu, prevarila sam te!");
+	}
+	else if(zbroj > 5)
+	{
+		Debug.Log("dijete je tvoje!");
+	}
+}
+
+
+*FOR PETLJA*
+
+for => dok je uvijet zadovoljen obavlja naredbe
+int i => brojac, ne mora se zvati i, najcešce se zove i
+uvijet => uvijet koji mora biti zadovoljen
+inkrement => utjece na brojac, naredba s kojim djelujemo na brojac
+
+nacin pisanja for petlje:
+
+for(int i = 0; uvijet; inkrement)
+{
+	naredba;
+}
+
+primjer:
+
+int broj_enemya = 3;
+
+void Start()
+{
+	for(int i = 0; i < broj_enemya; i++)
+	{
+		Debug.Log("Stvoren je " + i + ". enemy!");
+	}
+}
+
+1. Zadatak za for petlju
+Napravite skriptu koja ima *maximalno* 3 if/else if petlji po metodi. Neka je svaki uvijet definiran bool-om.
+Prvi bool se zove "easy" drugi se zove "normal", a treci "harderDaddy".
+a) ako je svaki bool false na pocetku, neka bool "normal" postane true
+b) svaki bool mora biti javan
+c) za uvijet easy neka se broj enemy-a (varijabla enemies) stavi na 5 i neka joj je to pocetna vrijednost (varijable)
+d) Ako je igra na normal onda neka je broj enemya dva puta veci od easy nacina
+e) Ako je igra na harderDaddy onda neka je broj enemya tri puta veci nego u normal nacinu igre
+f) Nakon što se provjeri koji je mod igre (težina, odnosno koji je bool tocan), neka se ispiše u konzoli svaki enemy posebno kao u primjeru: Debug.Log("Stvoren je " + i + ". enemy!") - npr. Stvoren je 3. enemy | Stvoren je 10. enemy
+g) Kada su se ispisali svi enemy-i (prestala je for petlja iz zadataka f) neka se ispiše poruka "Sretno ti u " + težina igre + " nacinu igre!" - npr. Sretno ti u easy nacinu igre!
+
+"SKICA"
+O Easy
+O Normal
+O HarderDaddy
+public enemies = 5
+
+DZ PONAVLJANJE
+
+Kakav zapis ide u vrstu varijable int?
+
+Kakav zapis ide u vrstu varijable float?
+
+Kakav zapis ide u vrstu varijable bool?
+
+Ako je int osavljen prazan, vrijednost mu je?
+
+Ako je bool ostavljen prazan, vrijednost mu je?
+
+Napišite programski matematicke zapise:
+5 * (22 - 11) / 8 = x
+9 * 7 * x / z = y
+x * 88 - 111 = z
+
+Koja je razlika izmedu 3 standardne Unity metode: 
+a) Awake
+b) Start
+c) Update
+
+Prepišite skriptu i prepravite greške:
+
+int x = 11
+flaot n M = 2,4;
+
+void start
+{
+	z = n M * 2.5f - x;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
