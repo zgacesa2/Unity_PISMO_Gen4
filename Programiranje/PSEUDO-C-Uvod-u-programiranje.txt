@@ -1359,51 +1359,266 @@ O Normal
 O HarderDaddy
 public enemies = 5
 
-DZ PONAVLJANJE
+Prvi nacin:
+_____________________________________________
+//b
+public bool easy = false;
+public bool normal = false;
+public bool harderDaddy = false;
+int enemies = 5;
+
+void Start()
+{
+	//a
+	if(easy == false && normal == false && harderDaddy == false)
+	{
+		normal = true;
+	}
+	Spawn();
+}
+
+void Spawn()
+{
+	//c
+	if(easy == true)
+	{
+		enemies = 5;
+		//f
+		for(int i = 1; i <= enemies; i++)
+		{
+			Debug.Log("Stvoren je " + i + ". enemy!");
+		}
+		//g
+		Debug.Log("Sretno ti u easy nacinu igre!")
+	}
+	//d
+	else if(normal == true)
+	{
+		enemies *= 2;
+		//f
+		for(int i = 1; i <= enemies; i++)
+		{
+			Debug.Log("Stvoren je " + i + ". enemy!");
+		}
+		//g
+		Debug.Log("Sretno ti u normal nacinu igre!")
+	}
+	//e
+	else if(harderDaddy == true)
+	{
+		enemies *= 6;
+		//f
+		for(int i = 1; i <= enemies; i++)
+		{
+			Debug.Log("Stvoren je " + i + ". enemy!");
+		}
+		//g
+		Debug.Log("Sretno ti u harderDaddy nacinu igre!")
+	}
+}
+
+Drugi nacin:
+_____________________________________________
+public bool easy = false;
+public bool normal = false;
+public bool harderDaddy = false;
+int enemies = 5;
+
+void Start()
+{
+	if(easy)
+	{
+		enemies = 5;
+		Spawn();
+		Debug.Log("Sretno ti u easy nacinu igre!")
+	}
+	else if(harderDaddy)
+	{
+		enemies *= 6;
+		Spawn();
+		Debug.Log("Sretno ti u harderDaddy nacinu igre!")
+	}
+	else
+	{
+		normal = true;
+		enemies *= 2;
+		Spawn();
+		Debug.Log("Sretno ti u normal nacinu igre!")
+	}
+}
+
+void Spawn()
+{
+	for(int i = 1; i <= enemies; i++)
+	{
+		Debug.Log("Stvoren je " + i + ". enemy!");
+	}
+}
+
+VJEZBA PONAVLJANJE
 
 Kakav zapis ide u vrstu varijable int?
 
+Cijeli broj, npr. 1, 2, 3, -45, 100000, 0
+
 Kakav zapis ide u vrstu varijable float?
+
+Decimalni broj, npr. 1.5, 2.5, 5.4, 9.11, -6.9, 0.0
 
 Kakav zapis ide u vrstu varijable bool?
 
-Ako je int osavljen prazan, vrijednost mu je?
+true ili false
+
+Ako je int ostavljen prazan, vrijednost mu je?
+
+null, brojcano je to 0
 
 Ako je bool ostavljen prazan, vrijednost mu je?
+
+false
 
 Napišite programski matematicke zapise:
 5 * (22 - 11) / 8 = x
 9 * 7 * x / z = y
 x * 88 - 111 = z
 
-Koja je razlika izmedu 3 standardne Unity metode: 
+float x;
+float y;
+float z;
+
+void Start()
+{
+	x = 5 * (22 - 11) / 8;
+	z = x * 88 - 111;
+	y = 9 * 7 * x / z;
+}
+
+Koja je razlika izmedu 3 standardne Unity metode sa primjerom funkcionalnosti iz pravih video igara: 
 a) Awake
+	- Odvija se prije nultog frame i odvija se jednom. Primjer: Tutoriali (Paper IO.2)
 b) Start
-c) Update
+	- Nakon Awakea, jednom se odvija. Primjer: Postavljanje HP, Mane, Dmg itd u League of Legends
+c) Update - Svaki frame se odvija, primjer: Provjera treba li se health regenerirati u Hunt Showdown
 
 Prepišite skriptu i prepravite greške:
 
-int x = 11
-flaot n M = 2,4;
+int x = 11;
+float nM = 2.4f;
+float z = 0f;
 
-void start
+void Start()
 {
-	z = n M * 2.5f - x;
+	z = nM * 2.5f - x;
 }
 
+DZ Papirici
+1)
+x je javan broj koji je 100. Ispisi u konzoli sve parne brojeve od 0 do x.
+
+public int x = 100;
+
+void Start()
+{
+	for(int i = 1; i <= x; i++)
+    	{		
+		if(i % 2 == 0)
+    		{
+			Debug.Log(i);
+		}
+    	}
+}
+   
+2)
+Napisi primjer for petlje  
+
+for (int i = 1; i < 10000; i++)
+{
+	Debug.Log(i);
+}
+
+3)
+
+x je 1, y je 2, definiraj i neka se odvije prije 0 framea
+
+int x;
+int y;
+
+void Awake()
+{
+	x = 1;
+	y = 2;
+}
+
+4)
+Koliki je y, a kolika je vrijednost b?
+
+int x = 18;
+int y = 0;
+bool a = false;
+bool b;
+
+void Start() 
+{
+	if (x > 12) // true
+	{
+		b = true;
+	}
+
+	if (a != false) // false 
+	{
+		y = 18;
+	}
+}
+
+y = 0, a b = true
 
 
 
+Dalje vježbanje:
+
+86)
+Prepišite skriptu i prepravite greške te joj napišite komentare
+
+KRIVO:
+
+flaoat X_X = 67f;
+publik float xD:
+private float c_N = 99.54321f;
+
+void Update()
+{
+	if(X_X * xD - cn >= 69.22 * 2;
+	[
+		X_X -- 19;
+		xD *= 1.2f;
+		c_M -= 1,1f;
+	]
 
 
+TOCNO:
 
 
+87)Prepišite skriptu i prepravite greške te joj napišite komentare
 
+KRIVO:
 
+boll marmun = false;
+intx = 11:
+int z = 12;
+int y:
 
+void Start[]
+{
+	if(x / 11 & z - 12 = 1)
+	{
+		marmun = true;
+		y = z * X;
+}
 
-
-
+Void Update()
+{
+	y = y * Z * x:
+}
 
 
 
