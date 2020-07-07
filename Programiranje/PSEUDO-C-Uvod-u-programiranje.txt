@@ -1597,6 +1597,19 @@ void Update()
 
 TOCNO:
 
+float X_X = 67f;
+public float xD;
+private float c_N = 99.54321f;
+
+void Update()
+{
+	if(X_X * xD - c_N >= 69.22f * 2)
+	{
+		X_X -= 19;
+		xD *= 1.2f;
+		c_N -= 1.1f;
+	}
+}
 
 87)Prepišite skriptu i prepravite greške te joj napišite komentare
 
@@ -1620,10 +1633,60 @@ Void Update()
 	y = y * Z * x:
 }
 
+TOCNO:
+
+bool marmun = false;
+int x = 11;
+int z = 12;
+int y;
+
+void Start()
+{
+	if(x / 11 == 1 && z - 12 == 1)
+	{
+		marmun = true;
+		y = z * x;
+	}
+}
+
+void Update()
+{
+	y = y * z * x;
+}
 
 
+** NOVA VRSTA VARIJABLE **
+
+string 
+
+string je tekstualni zapis, mogu se zapisivati rijeci, slova, brojevi i znakovi
+
+npr.
+
+string ime = "Pero";
+string prezime = "Peric";
+string datumRodenja = "19.1.2011";
+string visina = "189 cm";
 
 
+88)
+Napišite skriptu koja ucitava upisane javne vrijednosti za igracevo ime, prezime, broj godina (int), visinu (int), te grad iz kojega dolazi. U metodi start se trebaju ispisati u konzoli sve njegove vrijednosti.
+npr. "Ja sam Marko Maric. Imam 28 godina, te sam visok 169 cm i dolazim iz Špickovina!"
+
+public string ime;
+public string prezime;
+public string grad;
+public int godine;
+public int visina;
+
+void Start()
+{
+	Debug.Log("Ja sam " + ime + " " + prezime + ". Imam " + godine + " godina, te sam visok " + visina + " cm i dolazim iz " + grad + "!");
+}
+
+89)
+Napišite skriptu koja ucitava javne vrijednosti te te podatke ispisuje u navedeni tekst:
+"Moje ime je _________ i ja dolazim iz grada koji se zove ___________, a višlji sam od covjeka koji se zove __________ za ______ cm". To znaci a morate imati u kodu ucitavanje 2 vrijednosti imena, 2 vrijednosti visine i 2 vrijednosti grada, te dvije solucije teksta ovisno o tome koji je lik višlji.
 
 
 
