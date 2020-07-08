@@ -1841,7 +1841,19 @@ void Update()
 	}
 }
 
+90)
+Napišite while petlju koja je istinita dok god je int x vece ili jednako od 0. U while petlji treba biti naredba koja x smanjuje za 2, te ispisuje u konzoli "Ja volim " + x.
 
+public int x;
+
+void Start()
+{
+	while(x >= 0)
+	{
+		Debug.Log("Ja volim " + x); Ja volim 12
+		x-=2;
+	}
+}
 
 
 
