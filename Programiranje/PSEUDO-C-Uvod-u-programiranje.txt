@@ -1859,19 +1859,121 @@ void Start()
 Napišite skriptu koja ce ugasiti igru ako je slucajno igracev health pao ispod 0 ili je 0.
 Naredba koja gasi igru (.exe) se piše: Application.Quit();
 
+public float health = 100f;
+
+void Update()
+{
+	if(health <= 0)
+	{
+		Application.Quit();
+	}
+}
+
 92)
 Napišite skriptu koja ce imati vašu vlasititu metodu. Ta vaša vlastita metoda mora ispisati u konzoli "Prošlo je 60", svaki put kada se prikaže 60 frameova. (brojac koji broji frameove se resetira nakon 60 frameova i ponovo broji do 60 i tako dok god skripta radi)
+
+int frameCount = 0; //broja koliko se frameova pokazalo
+
+void Update()
+{
+	frameCount ++;
+	FrameCounterShow();
+}
+
+void FrameCounterShow()
+{
+	if(frameCount == 60)
+	{
+		Debug.Log("Prošlo je 60");
+		frameCount = 0;
+	}
+}
 
 93)
 Napišite for petlju koja piše u konzoli odbrojavanje (npr. 10, 9, 8, 7...), ali krece od pocetne javne vrijednosti, te ne smije pasti ispod 0 (zadnji broj zapisani u ispisu treba biti 0). U slucaju da je broj upisan negativan (npr. -102) onda ga se treba pretvoriti prvo u pozitivan i krenuti odbrojavati, a ako je 0 onda se treba pretvoriti u 10.
 
+public int javno = 10;
+
+void Start()
+{
+	if (javno < 0)
+	{
+		javno *= -1;
+	}
+	else if (javno == 0)
+	{
+		javno = 10;
+	}
+	for (int i = javno; i >= 0; i--)
+	{
+		if ( i > 0)
+		{
+			Debug.Log( i+ ",");
+		}
+		else if ( i ==0)
+		{
+			Debug.Log( i+ ".");
+		}
+	}
+}
+
+
 94)
 Vrijednost X je javna, dok god je vrijednost y = 10 (pocetna y je 10 iako je y javan), oduzmite od X y (ne pohranjujete rezultat u X), te ako je rezultat oduzimanja negativan broj (manji od 0) neka se ispiše "Negativo", ako je veci ispišite "Pozitivno", a ako je 0 neka se ispiše "Neutralno". Svaki put kada se ispiše tekst u konzoli neka se y umanji za 0.5.
+
+
+public float x = 0f;
+public float y = 10f;
+
+void Update()
+{
+	if(y == 10)
+	{
+		if(x - y < 0)
+		{
+			Debug.Log("Negativno");
+		}
+		else if(x - y > 0)
+		{
+			Debug.Log("Pozitivno");
+		}
+		else
+		{
+			Debug.Log("Neutralno");
+		}
+		y -= 0.5f;
+	}	
+}
+
 
 95)
 Napišite skriptu koja unosi igraceve informacije (username, ime championa, level, hp + 2 po izboru). Podatci se trebaju ispisati "Player (username) is playing with (champion). (username) is (level) level starting with: (hp) + (2 vase varijable)" Podatci se ispisuju tako da svaki frame se hp smanjuje za 1. Kada je igracu HP pao ispod 0 ili je 0 neka se ispiše SAMO JEDNOM "Player (username) has been killed". Poslje ispisa da je igrac umro se ne smije više ništa ispisivati.
 
 
+
+public string username;
+public string champ;
+public int level;
+public float hp;
+public int dmg;
+public float mana;
+bool dead = false;
+
+void Update()
+{
+
+	if (hp > 0) 
+	{
+		Debug.Log("Player " + username + " is playing with " + champ + "." + username + " is " + level + " level starting with: " + hp + " hp, " + mana + " mana, " + dmg + " damage.");
+	
+		hp--;
+	}
+	else if (hp <= 0 && dead == false)
+	{
+		Debug.Log("Player " + username + " has been killed.");
+		dead = true;
+	}
+}
 
 
 
