@@ -1688,6 +1688,172 @@ void Start()
 Napišite skriptu koja ucitava javne vrijednosti te te podatke ispisuje u navedeni tekst:
 "Moje ime je _________ i ja dolazim iz grada koji se zove ___________, a višlji sam od covjeka koji se zove __________ za ______ cm". To znaci a morate imati u kodu ucitavanje 2 vrijednosti imena, 2 vrijednosti visine i 2 vrijednosti grada, te dvije solucije teksta ovisno o tome koji je lik višlji.
 
+public string ime1;
+public string ime2;
+public string grad1;
+public string grad2;
+public int visina1;
+public int visina2;
+
+void Start()
+{
+	if(visina1 > visina2)
+	{
+		Debug.Log("Moje ime je " + ime1 + " i ja dolazim iz grada koji se zove " + grad1 + ", a višlji sam od covjeka koji se zove " + ime2 + " za " + (visina1 - visina2) + " cm.");
+	}
+	else if(visina1 < visina2)
+	{
+		Debug.Log("Moje ime je " + ime2 + " i ja dolazim iz grada koji se zove " + grad2 + ", a višlji sam od covjeka koji se zove " + ime1 + " za " + (visina2 - visina1) + " cm.");
+	}
+}
+
+Papirici
+
+1) var NekaVarijabla = 2.5f;
+
+	Kojeg tipa je ova varijabla?
+
+	Float
+
+2) Napiši skriptu koja definira vrijednost: 5, -8.25: "što si tako zao živote".
+   int x = 5;
+   float y = -8.25f;
+   string ime = "što si tako zao živote";
+
+
+3) Neka je x 17 a b javni float. Ako je x veci od y ispiši ga svaki frame a ostalo
+ispiši ga (x) prije nultog framea.
+
+int x = 17;
+public float b;
+public int y;
+bool xJeVeci;
+
+void Awake()
+{
+	if (x > y)
+	{
+		xJeVeci = true;
+	}
+	else
+	{
+		Debug.Log(x);
+	}
+}
+
+void Update()
+{
+	if (xJeVeci == true)
+	{
+		Debug.Log(x);
+	}
+}
+
+4) Što ce se ispisati?
+
+public int x = 10;
+public int y = 17;
+
+void Start ()
+{
+	Debug.Log (y/10);
+}
+
+odgovor: Ispisati ce se broj 1
+
+5.
+
+string a="1";
+string b="2";
+
+void Start()
+
+{
+  Debug.Log(a+b);
+}
+
+ŠTO SE ISPISUJE?
+
+ODGOVOR: 12
+
+*NOVO*
+
+
+WHILE PETLJA (dok petlja)
+
+odvija s dok je tvrdnja tocna
+OPASNA ZA UNITY! - ako je napisano krivo ruši (crasha) Unity, ali ne samo Unity nego u gorim situacijama može izbrisati dio projekta i/ili ugasiti racunalo
+
+Kako se piše while petlja:
+
+while(uvijet)
+{
+	naredba;
+	naredba koja utjece na uvijet;
+}
+
+*Infinity loop* - while petlja (ne samo while) koja se ponavlja u beskonacnost jer joj uvijet nikada ne može prestati vrijediti jer naredba koja utjece na nju ne radi pravilno
+
+Primjer pravilnog:
+
+int broj = 4;
+
+void Start()
+{
+	while(broj > 0)
+	{
+		Debug.Log("Broj je: " + broj);
+		broj--;
+	}
+}
+
+Primjer infinity loopa:
+
+int broj = 4;
+
+void Start()
+{
+	while(broj > 0)
+	{
+		Debug.Log("Broj je: " + broj);
+		broj++;
+	}
+}
+
+KAKO NE KORISTI WHILE PETLJU!!!
+
+bool gameOver;
+bool spawned;
+float timer;
+
+void Update()
+{
+	while(gameOver == false)
+	{
+		if(spawned == false)
+		{
+			//ucini nešto
+		}
+		else if(timer >= 2.0f)
+		{
+			timer += Time.deltaTime;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
