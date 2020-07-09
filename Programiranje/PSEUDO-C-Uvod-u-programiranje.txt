@@ -1976,6 +1976,117 @@ void Update()
 }
 
 
+Papirici:
+1)
+
+Što ce uciniti ova metoda Update?
+
+int x= 4;
+
+void Update()
+{
+	while(x>0)
+	{	
+		if(x>0)
+		{ 
+			Application.Quit();
+		}
+		x++;
+	}	
+}
+
+
+ugasit ce program
+
+2) Neka je X 4, a Y 5 i neka se njihov zbroj izracuna u startu u varijablu Z, a onda neka se svaki frame Z uveca za X.
+
+int X = 4;
+int Y = 5;
+int Z;
+
+void Start()
+{
+	Z = X + Y;
+}
+
+void Update()
+{
+	Z += X;
+}
+
+
+3) Napisi metodu Odbrojac koja odbrojava od 5 do 0
+   i koristi while petlju. Metoda ispisuje brojeve
+   od 5 do 0.
+
+int x = 5;
+
+void Start
+{
+	while(x <= 5 && x >= 0)
+	{
+		Odbrojac();
+	}
+
+}
+void Odbrojac()
+{
+	Debug.Log(x);
+	x--;
+}
+
+4) Napiši for petlju koja prvi frame ispisuje neparne brojeve od x do y koji je 90.
+
+public int x;
+int y = 90;
+
+void Start()
+{
+	if ( x <= y) 
+	{
+   		for (int i = x; i <= y ; i++)
+   		{
+   			if(i % 2 !=0)
+			{
+				Debug.Log(i);
+			}
+   		}
+	}
+	else 
+	{
+   		for (int i = x; i >= y ; i--)
+   		{
+   			if(i % 2 !=0)
+			{
+				Debug.Log(i);
+			}
+   		}
+	}
+}
+
+5)
+   Crashaj Unity!
+Ne ozbiljno, izadi na ploci i napiši skriptu koja crasha Unity!
+
+
+int x = 420;
+
+void Update()
+{
+	while(x > 0)
+	{
+		Application.ForceCrash();
+	}
+}
+
+
+
+
+
+
+
+
+
 
 
 
