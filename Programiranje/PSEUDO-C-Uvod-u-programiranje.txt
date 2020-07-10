@@ -2079,11 +2079,57 @@ void Update()
 	}
 }
 
+PONAVLJANJE PRIJE KRAJA OSNOVA PROGRAMIRANJA:
 
+for petlja
 
+for(brojac, uvijet; inkrement/dekrement)
+{
+	naredba;
+}
 
+ispišite sve brojeve od 0 do neke javne vrijednosti
 
+public int a = 54;
 
+void Start()
+{
+	for(int i = 0; i < a; i++)
+	{
+		Debug.Log(i);
+	}
+}
+
+ispišite sve brojeve od javne vrijednosti do nula (javna vrijesnot se može unjeti samo pozitivan broj)
+
+public int b = 15;
+
+void Start()
+{
+	for(int i = b; i >= 0; i--)
+	{
+		Debug.Log(i);
+	} 
+}
+
+Ispišite sve parne vrijednosti od neke javne vrijednosti do 0
+
+public int z = 10;
+int i = 15;
+
+void Start()
+{
+	for(int i = z; i >= 0; i--)
+	{
+		if(i % 2 == 0)
+		{
+			Debug.Log(i);
+		}
+	}
+}
+
+BOOL
+Neka se zbrajaju dva javna broja, ako je njihov zbroj veci od 15 neka bool endGame postane true, ako su manji ili jednaki neka je false. Ako je endGame true onda neka se ispiše u konzoli da je igra završena, a ako je false neka ispiše preživio si
 
 
 
