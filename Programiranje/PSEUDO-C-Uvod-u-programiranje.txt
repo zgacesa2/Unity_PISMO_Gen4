@@ -2134,8 +2134,17 @@ Neka se zbrajaju dva javna broja, ako je njihov zbroj veci od 15 neka bool endGa
 
 
 
+TEŠKI ZADATCI ZA KRAJ:
+
+1.) Isprogramirajte osnovni krizic kruzic. (bez programskog djela unosa X i O igraca).
+Dakle imajte dve javne vrijednosti za imena igraca. Imajte dodjelu koji je igrac X a koji O. Dodjelite vrijednosti svih 9 polja. Napravite svoju skriptu koja provjerava ako je jedan igrac napravio niz od 3 za pobjedu.
 
 
+2.) Napišite skriptu gdje igrac unosi 15 ocijena (Hrv, Mat, Eng itd.). U slucaju da ima 3 ili više jedinica neka mu se ispiše da pada razred, u suprotnom neka mu se izracuna prosjek.
+
+3.) Napravite program za upis u srednju školu. U inspectoru se unose vrijednosti hrv za 7 i 8 razred i isto tako za eng i matematiku. Zatim neka su dva javna stringa za dva predmeta koji se traze (npr. fizika i kemija) sa ocjenama iz 7 i 8 razreda. Zatim se gleda prosjek ocijena iz 5,6,7 i 8 razreda. Broj bodova je zbroj ocijena svih unesenih. Imajte provjeru da unesena ocijena mora biti veca od jedan i manja od 6.
+
+4.) Napišite skriptu koja ce nam imati sva obilježja championa iz MOBA tipa igre. Takoder pripremite i moci, dmg za njega sve potreben informacije koje smatrate da jedan MOBA champion ima. (Nemojte zaboraviti provjeru jel umro, respawn itd.)
 
 
 
