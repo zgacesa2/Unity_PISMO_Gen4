@@ -1975,6 +1975,57 @@ void Update()
 	}
 }
 
+---
+96)
+
+Imamo 2 public int-a nazovimo ih start i end. 
+U Start methodi ispisati -1 ako je start broj manji od nule ili end broj manji od nule ili end manji od start broja.
+Ako nije onda zbrojiti sve neparne brojeve izmedu start (inkluzivno) i end (inkluzivno) brojeva. 
+Nakon toga ispisati taj zbroj. Inkluzivno znaci ukljucujuci.
+
+97)
+
+Imamo public int nazovimo ga number. U Start methodi ispiši -1 ako je public int (number) negativan.
+A ako nije negativan ispisi zbroj prve i zadnje znamenke.
+Tip: Koristi while.
+
+* Primjeri: *
+-> ako je number 252 -> ispisati se treba 4 jer prva znamenka je 2 (gledano s ljeva) i zadnja je (gledano s ljeva) pa 2 + 2 = 4
+-> ako je number 257 -> ispisati se treba 9 jer 2 + 7 = 9 -> 2 je prva 7 je zadnja
+-> ako je number 0 -> ispisati se treba 0
+-> ako je number 10 -> ispisati se treba 1 jer 1 + 0 = 1
+-> ako je number 12587 -> ispisati se treba 8 jer je 1 + 7 = 8
+-> ako je number 5 -> ispisati se treba 10, jer je 5 prva i zadnja znaci 5 + 5 = 10
+-> ako je number -10 -> ispisati se treba -1 jer je -10 negativan
+
+98)
+
+Definiraj public int i nazovi ga godina.
+Ukoliko je godina manja od 1 ili veca od 9999 ispisati "Godina nije dobra". 
+U suprotnom provjeriti dali je godina prijestupna.
+Za provjeru dali je godina prijestupna koristi sljedece korake
+-> Godina je prijestupna ako se moze cijelobrojno podjeliti sa 4 (npr. 2016, 2020,2024, ...),
+-> osim ako je cijelobrojno djeljiva sa 100 onda nije prijestupna (npr. 2100, 2200, ...).
+-> A ako je cijeloborojno djeljiva sa 400 onda je prijestupna (npr. 2000, 2400, ...)
+ 
+Info: https://en.wikipedia.org/wiki/Leap_year
+Vidi dio pseudo kod na linku iznad.
+
+99)
+
+Definiraj public broj koji representira/predstavlja broj kilobajta.
+Ako je broj kilobajta negativan u Start methodi ispiši text "Broj ne valja.".
+A ako je broj kilobajta positivan ispiši koliko je to megabajta i kilobajta.
+
+* Primjeri: *
+Ako su kilobajti 1025 ispisati "1025 KB je 1 MB i 1 KB."
+Ako su kilobajti -10 ispisati "Broj ne valja."
+Ako su kilobajti 3000 ispisati "3000 KB je 2 MB i 952 KB."
+
+Tip: 1 MB (MegaBajt) je 1024 KB (kiloBajta)
+
+---
+
 
 Papirici:
 1)
