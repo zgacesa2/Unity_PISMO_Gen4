@@ -2142,6 +2142,46 @@ Dakle imajte dve javne vrijednosti za imena igraca. Imajte dodjelu koji je igrac
 
 2.) Napišite skriptu gdje igrac unosi 15 ocijena (Hrv, Mat, Eng itd.). U slucaju da ima 3 ili više jedinica neka mu se ispiše da pada razred, u suprotnom neka mu se izracuna prosjek.
 
+public int predmet1;
+public int predmet2;
+public int predmet3;
+public int predmet4;
+public int predmet5;
+public int predmet6;
+public int predmet7;
+public int predmet8;
+public int predmet9;
+public int predmet10;
+public int predmet11;
+public int predmet12;
+public int predmet13;
+public int predmet14;
+public int predmet15;
+
+int brojJedinica;
+int zbrojOcijena;
+
+private void Start()
+{
+	for (int i = 1; i < 15; i++)
+	{	
+		var predmetZaProvjeru = "predmet"[i];
+		if(predmetzaProvjeru <= 1)
+		{
+			brojJedinica++;
+		}
+            	zbrojOcijena += predmetZaProvjeru;
+        }
+	if(brojJedinica >= 3)
+	{
+		Debug.Log("Pao si rezred!");
+	}
+	else
+	{
+		Debug.Log("Prosjek je" + (zbrojOcijena / 15));
+	}
+    }
+
 3.) Napravite program za upis u srednju školu. U inspectoru se unose vrijednosti hrv za 7 i 8 razred i isto tako za eng i matematiku. Zatim neka su dva javna stringa za dva predmeta koji se traze (npr. fizika i kemija) sa ocjenama iz 7 i 8 razreda. Zatim se gleda prosjek ocijena iz 5,6,7 i 8 razreda. Broj bodova je zbroj ocijena svih unesenih. Imajte provjeru da unesena ocijena mora biti veca od jedan i manja od 6.
 
 4.) Napišite skriptu koja ce nam imati sva obilježja championa iz MOBA tipa igre. Takoder pripremite i moci, dmg za njega sve potreben informacije koje smatrate da jedan MOBA champion ima. (Nemojte zaboraviti provjeru jel umro, respawn itd.)
