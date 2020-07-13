@@ -7,14 +7,14 @@ Javite se na wap sa porukom u kojoj
 Cete napisati svoje ime i prezime
 
 
-Matematiƒçki zapis
+MatematiËki zapis
 5 + 8 = 13
 
 Programski
 13 = 5 + 8
 
 X + 8 = 13
-X = 13 ‚Äì 8
+X = 13 ñ 8
 
 Prog.
 X = 5
@@ -26,13 +26,13 @@ Y = 2
 
 Z = x + y
 
-Int ‚Äì za cijele brojeve (1, -2, 0, 9841789417074)
-Float ‚Äì za decimalne brojeve (-2.7, 1.5, 7674.93219, 0, 1.0)
+Int ñ za cijele brojeve (1, -2, 0, 9841789417074)
+Float ñ za decimalne brojeve (-2.7, 1.5, 7674.93219, 0, 1.0)
 
 Float X = 5.0f
 Int Y = 5
 
-- Varijabla ‚Äì mjesto u memoriji rezervirano za pohranu podataka
+- Varijabla ñ mjesto u memoriji rezervirano za pohranu podataka
 
 Int X = 3
 Int Y = 2
@@ -46,7 +46,7 @@ Float R = 9.1f
 Float Mama = ?
 Rezultat oduzimanja X od R
 
-Mama = R ‚Äì X
+Mama = R ñ X
 
 Float x = 5.68f
 Int y = 4
@@ -55,7 +55,7 @@ float Z = 0
 Koliki je zbroj x + y?
 Z = x + y
 
-Gre≈°ka
+Greöka
 Int pp = 14
 Int rez = 0
 
@@ -63,7 +63,7 @@ Rez = pp + 2.48f greska
 Rez = pp + 2 okej
 
 
-Toƒçka zarez ‚Äû ; ‚Äú se pi≈°e na kraju linije naredbe
+ToËka zarez Ñ ; ì se piöe na kraju linije naredbe
 
 int x = 69;
 int weed = 420;
@@ -71,7 +71,7 @@ int mars = 45789;
 int uho = 0;
 
 Koliko je vrijednost uho-a ako oduzmemo zbroj weed i x od marsa
-uho = mars ‚Äì (x + weed);
+uho = mars ñ (x + weed);
 
 
 1. Zadatak, zbroji x i y ako je x 5, a y je 8
@@ -80,33 +80,33 @@ int y = 8;
 int b = 0;
 b = x + y;
 2. Zadatak, kolika je razlika ako je x 19, a y 7.5?
-Razliku zapi≈°ite u x
+Razliku zapiöite u x
 float x = 19f;
 float y = 7.5f;
-x = x ‚Äì y;
+x = x ñ y;
 
-3. Zadatak, programski zapi≈°ite ovaj matematiƒçki zapis: 9 + 11 = 20
+3. Zadatak, programski zapiöite ovaj matematiËki zapis: 9 + 11 = 20
 int x = 9;
 int y = 11;
 int z = 0;
 z = x + y;
 
-4. Zadatak, programski zapi≈°ite ovaj matematiƒçki zapis: 9.11 + 4.20 = z
+4. Zadatak, programski zapiöite ovaj matematiËki zapis: 9.11 + 4.20 = z
 float x = 9.11f;
 float y = 4.20f;
 float z = 0;
 z = x + y;
 z = 9.11f + 4.20f;
 
-5. Poƒçetna vrijednost varijable health je 100, primamo damage u vrijednosti od 17.6, kolika nam je konaƒçna vrijednost healtha?
+5. PoËetna vrijednost varijable health je 100, primamo damage u vrijednosti od 17.6, kolika nam je konaËna vrijednost healtha?
 float health = 100f;
 float damage = 17.6f;
-health = health ‚Äì damage;
+health = health ñ damage;
 *NAPOMENA*
 health -= damage;
 
-6. Pretvorite u programski zapis sa va≈°im vrijednostima:
-x + mama ‚Äì tata + krevet * sin = problem
+6. Pretvorite u programski zapis sa vaöim vrijednostima:
+x + mama ñ tata + krevet * sin = problem
 
 int x = 1;
 int mama = 1;
@@ -117,21 +117,21 @@ int problem = 0;
 *NAPOMENA*
 int problem;
 
-problem = x + mama ‚Äì tata + krevet * sin;
+problem = x + mama ñ tata + krevet * sin;
 
-7. Pretvorite u programski zapis sa va≈°im vrijednostima:
-bomba * 2 + teroristi ‚Äì majmun / 3.2 = wtf
+7. Pretvorite u programski zapis sa vaöim vrijednostima:
+bomba * 2 + teroristi ñ majmun / 3.2 = wtf
 int bomba = 3;
 int teroristi = 4;
 int majmun = 7;
 float wtf = 0f;
-wtf = bomba * 2 + teroristi ‚Äì majmun / 3.2f;
+wtf = bomba * 2 + teroristi ñ majmun / 3.2f;
 
-8. Na poƒçetku imate 52 mane, iskoristili ste ability koji ko≈°ta 4.5 mana i iskoristili ste ga 3 puta, koliko imate mane. Napi≈°ite programski.
+8. Na poËetku imate 52 mane, iskoristili ste ability koji koöta 4.5 mana i iskoristili ste ga 3 puta, koliko imate mane. Napiöite programski.
 float mana = 52f;
 float ability = 4.5f;
 mana -= ability * 3;
-9. Primili ste damage i health vam je sa sto pao za 10, nakon toga nam se health regenerira za 2.8 i potom smo opet udareni. Napi≈°ite to programski.
+9. Primili ste damage i health vam je sa sto pao za 10, nakon toga nam se health regenerira za 2.8 i potom smo opet udareni. Napiöite to programski.
 
 float health = 100f;
 int dmg = 10;
@@ -141,7 +141,7 @@ health -= dmg;
 health += regen;
 health -= dmg;
 
-10. U≈°li ste u borbu, u ≈°an≈æeru imate 15 metaka od maksimalnih 20, ispucali ste ih 4, te ste potom reloadali ≈°an≈æer. Napi≈°ite to programski.
+10. Uöli ste u borbu, u öanûeru imate 15 metaka od maksimalnih 20, ispucali ste ih 4, te ste potom reloadali öanûer. Napiöite to programski.
 
 int fullAmmo = 20;
 int currentAmmo = 15;
@@ -149,7 +149,7 @@ int currentAmmo = 15;
 currentAmmo -= 4;
 currentAmmo = fullAmmo;
 
-11. U varijablu students spremate koliƒçinu uƒçenika u uƒçioni, prvo ih doƒëe 20, nakon toga ode 5 zatim doƒëe njih 4 potom ode 12 i nakraju se broj uƒçenika udvostruƒçio. Napi≈°ite programski.
+11. U varijablu students spremate koliËinu uËenika u uËioni, prvo ih doe 20, nakon toga ode 5 zatim doe njih 4 potom ode 12 i nakraju se broj uËenika udvostruËio. Napiöite programski.
 
 int students = 0;
 
@@ -159,42 +159,42 @@ students += 4;
 students -= 12;
 students *= 2;
 
-12. Na poƒçetku igraƒç ima 12 ponija, drugi igraƒç ima 10 ponija, koliko ponija imaju igraƒçi ako je prvi igraƒç uzeo drugome 4 ponija. Napi≈°ite programski.
+12. Na poËetku igraË ima 12 ponija, drugi igraË ima 10 ponija, koliko ponija imaju igraËi ako je prvi igraË uzeo drugome 4 ponija. Napiöite programski.
 int playerOne = 12;
 int playerTwo = 10;
 
 playerTwo -= 4;
 playerOne += 4;
-13. Zbrojite x koji je 17.2 i y koji je 12.32. Rje≈°enje napi≈°ite u varijabli ‚ÄûMaska‚Äú
+13. Zbrojite x koji je 17.2 i y koji je 12.32. Rjeöenje napiöite u varijabli ÑMaskaì
 float x = 17.2f;
 float y = 12.32f;
 float maska = 0;
 
 maska = x + y;
 
-14. Poveƒáajte x koji je 5 za 5
+14. PoveÊajte x koji je 5 za 5
 int x = 5;
 
 x += 5;
-15. Neka je x 6, a y je 7, zatim njihov zbroj uveƒáajte za vrijednost y. Rezultat spremate u z.
+15. Neka je x 6, a y je 7, zatim njihov zbroj uveÊajte za vrijednost y. Rezultat spremate u z.
 int x = 6;
 int y = 7;
 int z = 0;
 
 z = (x+y) + y;
 
-16. Igraƒç ima 100 HP-a, pao je sa visine 8 metara i izgubio 20% HP-a. Zatim mu se HP, regenerirao za 8, i potom je igraƒç ponovo poku≈°ao skoƒçiti, ali je pao sada sa visine 7 metara i izgubio 15.7% HP. Napi≈°ite ovo programski.
+16. IgraË ima 100 HP-a, pao je sa visine 8 metara i izgubio 20% HP-a. Zatim mu se HP, regenerirao za 8, i potom je igraË ponovo pokuöao skoËiti, ali je pao sada sa visine 7 metara i izgubio 15.7% HP. Napiöite ovo programski.
 float HP = 100f;
 HP -= 0.2f * HP;
 HP += 8;
 HP -= 0.157f * HP;
 
-17. Na poƒçetku je z 12, i prvo ga poveƒáamo za 3 zatim ga umanjimo za 2%. Napi≈°ite ovo programski.
+17. Na poËetku je z 12, i prvo ga poveÊamo za 3 zatim ga umanjimo za 2%. Napiöite ovo programski.
 float z = 12f;
 
 z += 3;
 z -= 0.02f * z;
-18. Ima≈° 10 pokrajina, svaka daje 1 zlatnik, izgubio si 50% pokrajina, koliko zlatnika ti je ostalo poslije gubitaka (koliko ƒáe≈° dobivati zlatnika)
+18. Imaö 10 pokrajina, svaka daje 1 zlatnik, izgubio si 50% pokrajina, koliko zlatnika ti je ostalo poslije gubitaka (koliko Êeö dobivati zlatnika)
 flaot pokrajine = 10;
 float porez = 1;
 float ukupnoNovaca = 0;
@@ -202,29 +202,29 @@ float ukupnoNovaca = 0;
 ukupunoNovaca += pokrajine * porez;
 pokrajine *= 0.5f;
 ukupnoNovaca += pokrajine * porez;
-19. Na poƒçetku utakmice je bilo 100 navijaƒça, od tih 12 je donjelo baklje, ako su izbacili svakog drugog navijaƒça koji je donio baklju, koliko je ostalo navijaƒça?
+19. Na poËetku utakmice je bilo 100 navijaËa, od tih 12 je donjelo baklje, ako su izbacili svakog drugog navijaËa koji je donio baklju, koliko je ostalo navijaËa?
 int fans = 100;
 int hooligans = 12;
 fans -= hooligans / 2;
-20. Igraƒç ima 250 kristala, dao je 80 kristala, potom je pre≈°ao level i zaradio 70. Koliko ima kristala?
+20. IgraË ima 250 kristala, dao je 80 kristala, potom je preöao level i zaradio 70. Koliko ima kristala?
 int kristali = 250;
 
 kristali -= 80;
 kristali += 70;
-21. Baka je dala dedi 12 kuna (za pivu), a deda je veƒá imao 12, do≈°la je vrana i uzela baki 8 jabuka, a baka je imala ukupno 10 jabuka. Koliko deda ima kuna i koliko baka ima jabuka?
+21. Baka je dala dedi 12 kuna (za pivu), a deda je veÊ imao 12, doöla je vrana i uzela baki 8 jabuka, a baka je imala ukupno 10 jabuka. Koliko deda ima kuna i koliko baka ima jabuka?
 int dedaPare = 12;
 int babaJabuke = 10;
 
 dedaPare += 12;
 babaJabuke -= 8;
-22. max inventory je 100, trenutno je pun 67, igraƒç izbaci 13 itema, skupi 45 i nakon pregleda loota, baci 33 itema.
+22. max inventory je 100, trenutno je pun 67, igraË izbaci 13 itema, skupi 45 i nakon pregleda loota, baci 33 itema.
 int maxInv = 100;
 int currentinv = 67;
 
 currentInv -= 13;
 currentInv += 45;
 currentInv -= 33,
-23. Max HP je 100, body shot je 20, ima≈° 80 HP, padne≈° i izgubi≈° 2%, neko te nabije za jo≈° 8%, regenerira ti se hp na max, primi≈° body shot i head shot koji je duplo veƒái od body shot.
+23. Max HP je 100, body shot je 20, imaö 80 HP, padneö i izgubiö 2%, neko te nabije za joö 8%, regenerira ti se hp na max, primiö body shot i head shot koji je duplo veÊi od body shot.
 float maxHP = 100f;
 float currentHP = 80f;
 int bodyShot = 20;
@@ -237,30 +237,30 @@ currentHP = maxHP;
 currentHP -= bodyShot;
 currentHP -= headShot;
 
-24. Igraƒç pero ima 4 zlatne lopte, igraƒç marko ima 6 zlatnih lopti, igraƒç pero oteo je marku 1 zlatnu loptu, te mu je poslije toga marko uzvratio udarac i uzeo svoju loptu nazad i 2 markove. Koliko lopti ima marko a koliko pero, programski napi≈°i.
+24. IgraË pero ima 4 zlatne lopte, igraË marko ima 6 zlatnih lopti, igraË pero oteo je marku 1 zlatnu loptu, te mu je poslije toga marko uzvratio udarac i uzeo svoju loptu nazad i 2 markove. Koliko lopti ima marko a koliko pero, programski napiöi.
 int pero = 4;
 int marko = 6;
 
-pero += 1; -> br≈æi zapis kada je jedinica u pitanju je: pero++;
+pero += 1; -> brûi zapis kada je jedinica u pitanju je: pero++;
 marko -= 1; -> marko--;
 pero -= 3;
 marko += 3;
 
-25. Igraƒç ima 20 mane, iskoristio je vatrenu magiju od 5 mane, a nakon toga dvije ledene magije po 3 mane, koliko mu je mane ostalo?
+25. IgraË ima 20 mane, iskoristio je vatrenu magiju od 5 mane, a nakon toga dvije ledene magije po 3 mane, koliko mu je mane ostalo?
 int mana = 20;
 int vatra = 5;
 int led = 3;
 
 mana -= vatra;
 mana -= (led * 2);
-26. U poƒçetku imas 100 HP, primis 25 dmg, i regeneris se za 8.
+26. U poËetku imas 100 HP, primis 25 dmg, i regeneris se za 8.
 int HP = 100; 
 int dmg = 25;
 int regen = 8;
 
 HP -= dmg;
 HP += regen;
-27. Igraƒç ima 100 HP, nakon udarca gubi 10%, nakon toga regenerirao za 5%
+27. IgraË ima 100 HP, nakon udarca gubi 10%, nakon toga regenerirao za 5%
 float hp = 100f;
 
 hp -= 0.1f * hp;
@@ -268,54 +268,54 @@ hp += 0.05f * hp;
 
 **PISANJE KOMENTARA**
 - obavezno
-- korisno za druge ljude kada ƒçitaju va≈° kod
-- korisno za vas ako niste neko vrijeme ƒçitali kod
-- programeri koji ne koriste komentare ‚ÄûPrvo smo samo ja i bog znali kako ovaj kod radi, sada zna samo bog‚Äú
-- komentari se pi≈°u sa ‚Äû//‚Äú i pi≈°ete ih iznad ili u redu na liniju ili metodu na koju se odnose
+- korisno za druge ljude kada Ëitaju vaö kod
+- korisno za vas ako niste neko vrijeme Ëitali kod
+- programeri koji ne koriste komentare ÑPrvo smo samo ja i bog znali kako ovaj kod radi, sada zna samo bogì
+- komentari se piöu sa Ñ//ì i piöete ih iznad ili u redu na liniju ili metodu na koju se odnose
 npr.
 
 int health = 100; // varijabla za health
 int dmg = 25; //varijabla za dmg od enemy zombija
 int dmg2 = 30 ; //varijabla za dmg od enemy vampira
 
-//Igraƒç je primio udarac od neprijatelja
+//IgraË je primio udarac od neprijatelja
 health -= dmg;
 
 ** UVIJETI **
-≈†to je uvijet?
-- uvjet je skup rijeƒçi koje govore ≈°to se treba ispuniti kako bi se izvr≈°io red naredbi
+äto je uvijet?
+- uvjet je skup rijeËi koje govore öto se treba ispuniti kako bi se izvröio red naredbi
 - primjeri uvijeta
-o AKO ‚Äì IF
-o DOK ‚Äì While
-o Kada ‚Äì When (ovo ne postoji, primjera radi samo)
+o AKO ñ IF
+o DOK ñ While
+o Kada ñ When (ovo ne postoji, primjera radi samo)
 - Kako zadovoljiti uvijet -> sa znakovima
 o == jednako je (provjera vrijednosti jesu li jednake)
 o = dodjeli vrijednost
-o != razliƒçito je
+o != razliËito je
 o || ili
 o && i
-o > veƒáe
+o > veÊe
 o < manje
 o <= manje ili jednako
-o >= veƒáe ili jednako
+o >= veÊe ili jednako
 provjera if petlje
-if( 1+1 == 2) -> toƒçno
-if( 2+3 != 4) -> toƒçno
+if( 1+1 == 2) -> toËno
+if( 2+3 != 4) -> toËno
 if( 18 > 19) -> krivo
-if( 21 <= 21) -> toƒçno
+if( 21 <= 21) -> toËno
 
 
 kao da je:
  istina -> 1+1 = 2
-la≈æ 5+5 = 11
-if( istina || la≈æ) -> toƒçan
-if(istina || istina) -> toƒçno
-if( la≈æ || istina) -> toƒçan
-if(istina && istina) -> toƒçan
-if (istina && la≈æ) -> krivo
-if( la≈æ && la≈æ) -> kriv
+laû 5+5 = 11
+if( istina || laû) -> toËan
+if(istina || istina) -> toËno
+if( laû || istina) -> toËan
+if(istina && istina) -> toËan
+if (istina && laû) -> krivo
+if( laû && laû) -> kriv
 
-28. x je veliƒçine 8, a y je veliƒçine 13, ako je njihov zbroj manji od 50 neka se x poveƒáa za samoga sebe, ako je veƒái ili jednak neka se y poveƒáa za samoga sebe
+28. x je veliËine 8, a y je veliËine 13, ako je njihov zbroj manji od 50 neka se x poveÊa za samoga sebe, ako je veÊi ili jednak neka se y poveÊa za samoga sebe
 
 int x = 8;
 int y = 13;
@@ -332,7 +332,7 @@ else
 {
 	y = y +x;
 }
-29. Vrijednost x je -3.6, a vrijednost y je 10, ako je njihov umno≈æak (mno≈æe se ) veƒái od 100 neka se x uveƒáa za taj umno≈æak, ako je manji od 100 neka se y uveƒáa za umno≈æak, a ako su jednaki 100 onda neka se i x i y uveƒáaju za sami sebe.
+29. Vrijednost x je -3.6, a vrijednost y je 10, ako je njihov umnoûak (mnoûe se ) veÊi od 100 neka se x uveÊa za taj umnoûak, ako je manji od 100 neka se y uveÊa za umnoûak, a ako su jednaki 100 onda neka se i x i y uveÊaju za sami sebe.
 
 float x = -3.6f;
 float y = 10f;
@@ -351,10 +351,10 @@ else
 	y += y;
 }
 
-30. Igraƒçev health je 30. Regeneracija ce mu krenuti ako mu je health pao ispod 20 i poveƒáati ƒáe se za 12.
-Igrac je prvo primio dmg od 9. Zatim je popio health potion koji mu je vratio 10 hp i potom je primio criticle strike koji mu je skinuo 26 hp. Pitanje je jel se igracu dogodio health regeneration i ako je kada. Napisite programski i oznacite komentarima kada se dogaƒëa health reg. ako se dogodio.
+30. IgraËev health je 30. Regeneracija ce mu krenuti ako mu je health pao ispod 20 i poveÊati Êe se za 12.
+Igrac je prvo primio dmg od 9. Zatim je popio health potion koji mu je vratio 10 hp i potom je primio criticle strike koji mu je skinuo 26 hp. Pitanje je jel se igracu dogodio health regeneration i ako je kada. Napisite programski i oznacite komentarima kada se dogaa health reg. ako se dogodio.
 
-31. Igrac jedan i dva imali su 100 HP, igrac dva udario je igraca jedan te mu oduzeo 25 HP, igrac jedan kontra napadom o≈°tetio je igraca dva za 14 hp te regenerirao 10 svog HP, koliko koji igrac ima HP, programski?
+31. Igrac jedan i dva imali su 100 HP, igrac dva udario je igraca jedan te mu oduzeo 25 HP, igrac jedan kontra napadom oötetio je igraca dva za 14 hp te regenerirao 10 svog HP, koliko koji igrac ima HP, programski?
 
 Pravilno:
 _playerOne
@@ -379,7 +379,7 @@ playerOne -= 25;
 playerTwo -= 14;
 playerOne += 10;
 
-32. Pokemon evoluirao kada donese level 16 za koji mu je potreban 4561 XP, trenutni lvl 1 ima 0 XP, odradio je 25 borbi gdje je dobio 25 XP i nakon toga jo≈° 25 gdje je u svakoj dobio 93 XP, provjeriti konacni XP i jel evuluirao, ako ako ne evoluira gubi sav XP.
+32. Pokemon evoluirao kada donese level 16 za koji mu je potreban 4561 XP, trenutni lvl 1 ima 0 XP, odradio je 25 borbi gdje je dobio 25 XP i nakon toga joö 25 gdje je u svakoj dobio 93 XP, provjeriti konacni XP i jel evuluirao, ako ako ne evoluira gubi sav XP.
 
 int pokemonLvl = 1;
 int pokemonXP = 0;
@@ -437,7 +437,7 @@ else if(broj > 10)
 	broj -= 9;
 }
 
-36. U ≈°umi je 6 elfova, 5 gnomova i 10 orkova, ako je broj elfova i gnomova manji ili jednak orkovima spawna se jo≈° toliko elfova, a ako je njihov zbroj veci, orkovi ce pojesti 2 gnoma
+36. U öumi je 6 elfova, 5 gnomova i 10 orkova, ako je broj elfova i gnomova manji ili jednak orkovima spawna se joö toliko elfova, a ako je njihov zbroj veci, orkovi ce pojesti 2 gnoma
 
 int elf = 6;
 int gnom = 5;
@@ -453,7 +453,7 @@ else
 }
 
 
-37. Pocetna vrijednost varijable je 830, X je 69, a Y 538, ukoliko je umno≈æak x i y manji od 1000, pocetna vrijednost varijable uveca se za 100. Ukoliko je umno≈æak veci, pocetna vrijednost varijable se smanji za 100.
+37. Pocetna vrijednost varijable je 830, X je 69, a Y 538, ukoliko je umnoûak x i y manji od 1000, pocetna vrijednost varijable uveca se za 100. Ukoliko je umnoûak veci, pocetna vrijednost varijable se smanji za 100.
 
 int pocetna = 830;
 int x = 69;
@@ -468,7 +468,7 @@ else if(x * y > 1000)
 	pocetna -= 100;
 }
 
-38. super Mario je imao 3 ≈æivota, izguio je 2 ≈æivota, dobio je jedan ≈æivot tokom nivoa, i dobio jedan ≈æivot sa prelaskom nivoa, koliko ima ≈æivota napi≈°i programski.
+38. super Mario je imao 3 ûivota, izguio je 2 ûivota, dobio je jedan ûivot tokom nivoa, i dobio jedan ûivot sa prelaskom nivoa, koliko ima ûivota napiöi programski.
 
 int marioLife = 3;
 
@@ -490,7 +490,7 @@ else
 	y -= y * 0.1f;
 }
 
-npr. AKO HOCETE DOBITI CIJELI BROJ A MNO≈ΩITE(ILI BILO ≈†TA DRUGO) SA DECIMALAMA.
+npr. AKO HOCETE DOBITI CIJELI BROJ A MNOéITE(ILI BILO äTA DRUGO) SA DECIMALAMA.
 
 int x = 15;
 int y = 67;
@@ -557,7 +557,7 @@ if(items == itemsToCollect)
 }
 
 
-42. Vrijednost nice je 69, vrijednost blaze je 420, ako je zbroj tih vrijednosti pomno≈æen za 2 veci od 1300 neka se nice podupla, a ako je manji ili jednak 1250 neka se blaze podupla.
+42. Vrijednost nice je 69, vrijednost blaze je 420, ako je zbroj tih vrijednosti pomnoûen za 2 veci od 1300 neka se nice podupla, a ako je manji ili jednak 1250 neka se blaze podupla.
 
 int nice = 69;
 int blaze = 420;
@@ -587,7 +587,7 @@ int HP = 100;
 HP -= 23;
 HP += 15;
 
-45. Vi imate 15 ‚Ç¨, va≈° frend ima 25‚Ç¨ i va≈° treci frend ima 10.5‚Ç¨ zajedno odlucite kupiti bugati vayrona koji ko≈°ta 2500000‚Ç¨. Ako osoba koja ima najvi≈°e novaca ima duplo vi≈°e novaca od osobe koja ima najmanje novaca. Onda placa pola cijene. A ostali djele ostatak. Ako to nije slucaj onda svi djele jednako.
+45. Vi imate 15 Ä, vaö frend ima 25Ä i vaö treci frend ima 10.5Ä zajedno odlucite kupiti bugati vayrona koji koöta 2500000Ä. Ako osoba koja ima najviöe novaca ima duplo viöe novaca od osobe koja ima najmanje novaca. Onda placa pola cijene. A ostali djele ostatak. Ako to nije slucaj onda svi djele jednako.
 
 float my = 15f;
 float friendOne = 25f;
@@ -685,7 +685,7 @@ else
 	y *= y;
 }
 
-47. Igrac ima 100 HP, ako mu hp padne ispod 75 regenereira 10, a ako padne ispod 25 i igrac ostane ≈æiv, regenerira 25. Igrac primi 55 dmg, zatim primi opet 55 dmg, koliko se healtha igracu regeneriralo.
+47. Igrac ima 100 HP, ako mu hp padne ispod 75 regenereira 10, a ako padne ispod 25 i igrac ostane ûiv, regenerira 25. Igrac primi 55 dmg, zatim primi opet 55 dmg, koliko se healtha igracu regeneriralo.
 
 int hp = 100;
 int dmg = 55;
@@ -764,7 +764,7 @@ if(brzina <= 99)
 
 **METODE**
 
-- public - ispred vrste varijable omogucava da mi kao developeri mo≈æemo unositi i mjenjati vrijednosti u Unityu, u inspectoru
+- public - ispred vrste varijable omogucava da mi kao developeri moûemo unositi i mjenjati vrijednosti u Unityu, u inspectoru
 - private - nije vidljivo u inspectoru (U Unityu) niti je dostupno iz drugih skripti
 
 - Metoda
@@ -772,20 +772,20 @@ if(brzina <= 99)
 	- svaka metoda ima svoje uvijete
 *Kljucne metode u Unityu
 
-- Awake - odvija se prije 0 (nultog) framea, dogada se prije stavaranja bilokakvih objekata na sceni, izv≈°ava se samo jedanput
+- Awake - odvija se prije 0 (nultog) framea, dogada se prije stavaranja bilokakvih objekata na sceni, izvöava se samo jedanput
 
-- Start - izvr≈°ava se netom prije prvoga framea (krajem nultog framea) i izvr≈°ava se samo jedanput
+- Start - izvröava se netom prije prvoga framea (krajem nultog framea) i izvröava se samo jedanput
 
-- Update - svaki frame jedan put se izvr≈°i
+- Update - svaki frame jedan put se izvröi
 
 **Debugiranje**
 - Osnovno - Debug.Log("")
 - Debug - debugiraj (provjeri)
-- Log - ispi≈°i u konzoli
-- ("") - unutar navodnika ≈°to treba ispisati
+- Log - ispiöi u konzoli
+- ("") - unutar navodnika öto treba ispisati
 
 
-1. U startu neka se zbroje 2 javna broja. I neka se ispi≈°e u konzoli njihov zbroj.
+1. U startu neka se zbroje 2 javna broja. I neka se ispiöe u konzoli njihov zbroj.
 public int prviBroj;
 public int drugiBroj;
 int zbroj;
@@ -797,7 +797,7 @@ void Start()
 }
 
 
-2. Zbrojite u startu x koji je 17.2 i y koji je javan broj, neka se rezultat sprema u varijablu "banana" i neka se ispi≈°e u konzoli.
+2. Zbrojite u startu x koji je 17.2 i y koji je javan broj, neka se rezultat sprema u varijablu "banana" i neka se ispiöe u konzoli.
 
 float x = 17.2f;
 public float y;
@@ -850,13 +850,13 @@ void Update()
 	rez += (x / 2);
 }
 
-6. Ako je vrijednost x -3.6, a vrijednost y je javna. Ako je zbroj veci od 20 neka se ispi≈°e "To legendo", a ako je manji ili jednak neka se ispi≈°e "Falio si"
+6. Ako je vrijednost x -3.6, a vrijednost y je javna. Ako je zbroj veci od 20 neka se ispiöe "To legendo", a ako je manji ili jednak neka se ispiöe "Falio si"
 
 float x = -3.6f;
 public float y = 0;
 float zbroj = 0;
 
-//Ovdje mo≈æe biti awake ili start svejedno je
+//Ovdje moûe biti awake ili start svejedno je
 void Awake()
 {
 	zbroj = y + x;
@@ -870,7 +870,7 @@ void Awake()
 	}
 }
 
-7. U startu zbrojite dvije javne vrijednosti. Neka se svaki frame x povecava za 5% koliko je y. Svaki frame ponovo zbrojite x i y te ispi≈°ite vrijednost zbroja.
+7. U startu zbrojite dvije javne vrijednosti. Neka se svaki frame x povecava za 5% koliko je y. Svaki frame ponovo zbrojite x i y te ispiöite vrijednost zbroja.
 
 public float x = 10f;
 public float y = 20f;
@@ -888,7 +888,7 @@ void Update()
 	Debug.Log(rez);
 }
 
-8. Napi≈°ite u metodi start "ja sam start", u metodi awake neka se ispi≈°te "Ja sam mali Awake", te u konacnici neka se svaki frame ispisuje "Moje ime je Medo Lino"
+8. Napiöite u metodi start "ja sam start", u metodi awake neka se ispiöte "Ja sam mali Awake", te u konacnici neka se svaki frame ispisuje "Moje ime je Medo Lino"
 
 void Awake()
 {
@@ -905,7 +905,7 @@ void Update()
 	Debug.Log("Moje ime je Medo Lino");
 }
 
-9. Povecavajte varijablu X za jedan svaki frame. Neka se svaki frame ispi≈°e "Ja sam " + x
+9. Povecavajte varijablu X za jedan svaki frame. Neka se svaki frame ispiöe "Ja sam " + x
 
 public int x = 0;
 
@@ -942,7 +942,7 @@ void Start ()
 }
 
 3)
-≈°to znaci !=
+öto znaci !=
 
 4)
 int x = 10;
@@ -979,7 +979,7 @@ void Start ()
 Dz zadatci 2.
 1)
 
-Definiraj 2 public floata, ako su brojevi jednaki do 3 decimale ispi≈°i "jednaki su", ako nisu jednaki do 3 decimale ispi≈°i "nisu".
+Definiraj 2 public floata, ako su brojevi jednaki do 3 decimale ispiöi "jednaki su", ako nisu jednaki do 3 decimale ispiöi "nisu".
 
 PRIMJERI:
 
@@ -991,7 +991,7 @@ PRIMJERI:
 2)
 x=7
 Treba objavit javno.
-Napi≈°i to u programu.
+Napiöi to u programu.
 
 public int x = 7;
 void Start()
@@ -1025,7 +1025,7 @@ void Update()
 
 Nastavak C# pseudo
 
-1) napi≈°ite skriptu gdje se moze zbrajati dva dva javna broja u metodi start
+1) napiöite skriptu gdje se moze zbrajati dva dva javna broja u metodi start
 
 public float a = 1f;
 public float b = 2f;
@@ -1038,16 +1038,16 @@ void Start()
 }
 
 
-≈†to je to BOOL?
-- Bool je vrijednost koja pohranjuje u sebe jel ne≈°to tocno ili netocno
-- Mo≈æe biti samo TRUE ili FALSE
+äto je to BOOL?
+- Bool je vrijednost koja pohranjuje u sebe jel neöto tocno ili netocno
+- Moûe biti samo TRUE ili FALSE
 - Tehnicki: 0 ili 1
 - npr. 
 bool banana = false;
 bool died = true;
 bool gameEnded = true;
 
-2) Neka se zbrajaju dva javna broja, ako je njihov zbroj veci od 15 neka bool endGame postane true, ako su manji ili jednaki neka je false. Ako je endGame true onda neka se ispi≈°e u konzoli da je igra zavr≈°ena, a ako je false neka ispi≈°e pre≈æivio si
+2) Neka se zbrajaju dva javna broja, ako je njihov zbroj veci od 15 neka bool endGame postane true, ako su manji ili jednaki neka je false. Ako je endGame true onda neka se ispiöe u konzoli da je igra zavröena, a ako je false neka ispiöe preûivio si
 
 public int x;
 public int y;
@@ -1070,15 +1070,15 @@ void CheckIfEndGame()
 {
 	if(endGame == true)
 	{
-		Debug.Log("Igra zavr≈°ena");
+		Debug.Log("Igra zavröena");
 	}
 	else
 	{
-		Debug.Log("Pre≈æivio si");
+		Debug.Log("Preûivio si");
 	}
 }
 
-3) Neka su dva javna broja flaot vrijednosti, za pocetne vrijednosti neka budu 12.3 i 18.2. Postavite i privatni bool banana. Banana je na pocetku false. Ako je umno≈æak dva broja veci ili jednak od 100 neka banana postane true i u konzoli neka ispi≈°e "Banana je pojedena", ako je banana false neka se ispi≈°e "Banana je citava". Takoder za uvijet banane mora i umno≈æak ta dva broja biti manji od 100.
+3) Neka su dva javna broja flaot vrijednosti, za pocetne vrijednosti neka budu 12.3 i 18.2. Postavite i privatni bool banana. Banana je na pocetku false. Ako je umnoûak dva broja veci ili jednak od 100 neka banana postane true i u konzoli neka ispiöe "Banana je pojedena", ako je banana false neka se ispiöe "Banana je citava". Takoder za uvijet banane mora i umnoûak ta dva broja biti manji od 100.
 
 public float x = 12.3f;
 public float y = 18.2f;
@@ -1097,7 +1097,7 @@ void Awake()
 	}
 }
 
-4) Napi≈°ite skriptu gdje cete imati start metodu i metodu naziva va≈°eg imena. U startu neka se pozove metoda va≈°eg imena i neka se u konzoli napi≈°e "Moje ime je medvjedic Lino".
+4) Napiöite skriptu gdje cete imati start metodu i metodu naziva vaöeg imena. U startu neka se pozove metoda vaöeg imena i neka se u konzoli napiöe "Moje ime je medvjedic Lino".
 
 void Start()
 {
@@ -1109,7 +1109,7 @@ void Nikola()
 	Debug.Log("Moje ime je medvjedic Lino");
 }
 
-5) Imajte javni bool playMe koji je u pocetku true, ako je on true neka se u startu pozove metoda PlayMeMadafaka koja ce ispisati u konzoli "Game started", a ako je playMe false neka se u konzoli ispi≈°e "Game has not started properly"
+5) Imajte javni bool playMe koji je u pocetku true, ako je on true neka se u startu pozove metoda PlayMeMadafaka koja ce ispisati u konzoli "Game started", a ako je playMe false neka se u konzoli ispiöe "Game has not started properly"
 
 public bool playMe = true;
 
@@ -1130,7 +1130,7 @@ void PlayMeMadafaka()
 	Debug.Log("Game started");
 }
 
-6) Imajte dva bool-a jedan int i jedan float va≈°ega izbora. U startu neka se radi provjera jesu li brojevi (svaki zasebno) jednaki jedan drugome, ako jesu neka prvi bool postane true, a drugi false, a ako ta dva broja nisu jednaka neka drugi bool postane true, a prvi false.
+6) Imajte dva bool-a jedan int i jedan float vaöega izbora. U startu neka se radi provjera jesu li brojevi (svaki zasebno) jednaki jedan drugome, ako jesu neka prvi bool postane true, a drugi false, a ako ta dva broja nisu jednaka neka drugi bool postane true, a prvi false.
 
 int x = 7;
 float y = 7.5f;
@@ -1151,7 +1151,7 @@ void Start()
 	}
 }
 
-7) Napi≈°ite skriptu koja u sebe u nosi 4 javna floata. U startu se radi provjera matematickog zapisa:
+7) Napiöite skriptu koja u sebe u nosi 4 javna floata. U startu se radi provjera matematickog zapisa:
  "x + y * (a / b) - x / a * 18 * b - x + y = rez". Ako je rezultat veci od drugog matematickog zapisa:
 "x - y / (a * b) + x * a / 18 / b + x - y + 23 = rez" onda neka se u updateu rezultat povecava za jedan i ispisuje "Ja sam rezultat: " + rez.
 
@@ -1176,7 +1176,7 @@ void Update()
 	}
 }
 
-8) Imajte javnu vrijednost u koju upisujete koliko godina imate. Zatim neka se radi provjera ako imate vi≈°e od 18 ili manje godina. Ako imate vi≈°e neka se ispi≈°e "Ti si punoljetan i ima≈° " + broj godina + ". A to je ustvari: " + broj godina pretvoren u mjesece. (broj godina * 12)
+8) Imajte javnu vrijednost u koju upisujete koliko godina imate. Zatim neka se radi provjera ako imate viöe od 18 ili manje godina. Ako imate viöe neka se ispiöe "Ti si punoljetan i imaö " + broj godina + ". A to je ustvari: " + broj godina pretvoren u mjesece. (broj godina * 12)
 
 public int x = 24;
 
@@ -1186,14 +1186,14 @@ void Start()
 	{
 		if (x > 18)
 		{		
-			Debug.Log("Ti si punoljetan i ima≈° " + x +". A to je ustvari: " + (x * 12));
+			Debug.Log("Ti si punoljetan i imaö " + x +". A to je ustvari: " + (x * 12));
 		}	
 	}
 }
 
 
 
-9) Napi≈°ite skritpu gdje imate jedan bool i jedan javni broj. Ako je taj javni broj razlicit od 18 onda neka se pozove metoda MjenjajMe koja mjenja vrijednost bool-a, vrijednost mjenja tako da ako je bool bio true pretvara ga u false, a ako je bio false pretvara ga u true.
+9) Napiöite skritpu gdje imate jedan bool i jedan javni broj. Ako je taj javni broj razlicit od 18 onda neka se pozove metoda MjenjajMe koja mjenja vrijednost bool-a, vrijednost mjenja tako da ako je bool bio true pretvara ga u false, a ako je bio false pretvara ga u true.
 
 private bool a = false;
 public int x = 0;
@@ -1220,7 +1220,7 @@ void MjenjajMe()
 
 
 
-10) Napi≈°ite skriptu koja mno≈æi dva javna broja. Ako je njihov umno≈æak razlicit od 100 ili je veci od 0 onda neka se pozove druga metoda naziva JaSamMetodaDva u kojoj ce se raditi djeljenje prvog broja sa drugim i ako je njihov rezultat manji od 100 i vece od 0 onda neka se ipi≈°e u konzoli "Ja sam visok", a ako je bilokoje drugo rije≈°enje neka se u konzoli ispi≈°e "Ja sam nizak".
+10) Napiöite skriptu koja mnoûi dva javna broja. Ako je njihov umnoûak razlicit od 100 ili je veci od 0 onda neka se pozove druga metoda naziva JaSamMetodaDva u kojoj ce se raditi djeljenje prvog broja sa drugim i ako je njihov rezultat manji od 100 i vece od 0 onda neka se ipiöe u konzoli "Ja sam visok", a ako je bilokoje drugo rijeöenje neka se u konzoli ispiöe "Ja sam nizak".
 
 public float x;
 public float y;
@@ -1247,7 +1247,7 @@ void JaSamMetodaDva()
 	}
 }
 
-11) Imajte javni bool ako je taj bool jednak true na startu neka ispi≈°e "Volim mrkvu" a ako je bool razlicit od true onda neka ispi≈°e "Volim borovnicu".
+11) Imajte javni bool ako je taj bool jednak true na startu neka ispiöe "Volim mrkvu" a ako je bool razlicit od true onda neka ispiöe "Volim borovnicu".
 
 public bool voce;
 
@@ -1268,7 +1268,7 @@ void Start()
 
 
 DZ Zadatci:
-1) ≈†to ce se ispisati?
+1) äto ce se ispisati?
 	
 public int x = 10;
 public int y = 3;
@@ -1295,7 +1295,7 @@ void Update()
 	brojac++;
 }
 
-3) x i y su public brojevi. Ako je njihov zbroj manji od 5 u konzoli pi≈°i "mu≈æu, prevarila sam te", a ako je veci u konzili ispi≈°i "dijete je tvoje".
+3) x i y su public brojevi. Ako je njihov zbroj manji od 5 u konzoli piöi "muûu, prevarila sam te", a ako je veci u konzili ispiöi "dijete je tvoje".
 
 public int x;
 public int y;
@@ -1307,7 +1307,7 @@ void Start()
 
 	if(zbroj < 5)
 	{
-		Debug.Log("mu≈æu, prevarila sam te!");
+		Debug.Log("muûu, prevarila sam te!");
 	}
 	else if(zbroj > 5)
 	{
@@ -1319,7 +1319,7 @@ void Start()
 *FOR PETLJA*
 
 for => dok je uvijet zadovoljen obavlja naredbe
-int i => brojac, ne mora se zvati i, najce≈°ce se zove i
+int i => brojac, ne mora se zvati i, najceöce se zove i
 uvijet => uvijet koji mora biti zadovoljen
 inkrement => utjece na brojac, naredba s kojim djelujemo na brojac
 
@@ -1350,8 +1350,8 @@ b) svaki bool mora biti javan
 c) za uvijet easy neka se broj enemy-a (varijabla enemies) stavi na 5 i neka joj je to pocetna vrijednost (varijable)
 d) Ako je igra na normal onda neka je broj enemya dva puta veci od easy nacina
 e) Ako je igra na harderDaddy onda neka je broj enemya tri puta veci nego u normal nacinu igre
-f) Nakon ≈°to se provjeri koji je mod igre (te≈æina, odnosno koji je bool tocan), neka se ispi≈°e u konzoli svaki enemy posebno kao u primjeru: Debug.Log("Stvoren je " + i + ". enemy!") - npr. Stvoren je 3. enemy | Stvoren je 10. enemy
-g) Kada su se ispisali svi enemy-i (prestala je for petlja iz zadataka f) neka se ispi≈°e poruka "Sretno ti u " + te≈æina igre + " nacinu igre!" - npr. Sretno ti u easy nacinu igre!
+f) Nakon öto se provjeri koji je mod igre (teûina, odnosno koji je bool tocan), neka se ispiöe u konzoli svaki enemy posebno kao u primjeru: Debug.Log("Stvoren je " + i + ". enemy!") - npr. Stvoren je 3. enemy | Stvoren je 10. enemy
+g) Kada su se ispisali svi enemy-i (prestala je for petlja iz zadataka f) neka se ispiöe poruka "Sretno ti u " + teûina igre + " nacinu igre!" - npr. Sretno ti u easy nacinu igre!
 
 "SKICA"
 O Easy
@@ -1477,7 +1477,7 @@ Ako je bool ostavljen prazan, vrijednost mu je?
 
 false
 
-Napi≈°ite programski matematicke zapise:
+Napiöite programski matematicke zapise:
 5 * (22 - 11) / 8 = x
 9 * 7 * x / z = y
 x * 88 - 111 = z
@@ -1500,7 +1500,7 @@ b) Start
 	- Nakon Awakea, jednom se odvija. Primjer: Postavljanje HP, Mane, Dmg itd u League of Legends
 c) Update - Svaki frame se odvija, primjer: Provjera treba li se health regenerirati u Hunt Showdown
 
-Prepi≈°ite skriptu i prepravite gre≈°ke:
+Prepiöite skriptu i prepravite greöke:
 
 int x = 11;
 float nM = 2.4f;
@@ -1574,10 +1574,10 @@ y = 0, a b = true
 
 
 
-Dalje vje≈æbanje:
+Dalje vjeûbanje:
 
 86)
-Prepi≈°ite skriptu i prepravite gre≈°ke te joj napi≈°ite komentare
+Prepiöite skriptu i prepravite greöke te joj napiöite komentare
 
 KRIVO:
 
@@ -1611,7 +1611,7 @@ void Update()
 	}
 }
 
-87)Prepi≈°ite skriptu i prepravite gre≈°ke te joj napi≈°ite komentare
+87)Prepiöite skriptu i prepravite greöke te joj napiöite komentare
 
 KRIVO:
 
@@ -1670,8 +1670,8 @@ string visina = "189 cm";
 
 
 88)
-Napi≈°ite skriptu koja ucitava upisane javne vrijednosti za igracevo ime, prezime, broj godina (int), visinu (int), te grad iz kojega dolazi. U metodi start se trebaju ispisati u konzoli sve njegove vrijednosti.
-npr. "Ja sam Marko Maric. Imam 28 godina, te sam visok 169 cm i dolazim iz ≈†pickovina!"
+Napiöite skriptu koja ucitava upisane javne vrijednosti za igracevo ime, prezime, broj godina (int), visinu (int), te grad iz kojega dolazi. U metodi start se trebaju ispisati u konzoli sve njegove vrijednosti.
+npr. "Ja sam Marko Maric. Imam 28 godina, te sam visok 169 cm i dolazim iz äpickovina!"
 
 public string ime;
 public string prezime;
@@ -1685,8 +1685,8 @@ void Start()
 }
 
 89)
-Napi≈°ite skriptu koja ucitava javne vrijednosti te te podatke ispisuje u navedeni tekst:
-"Moje ime je _________ i ja dolazim iz grada koji se zove ___________, a vi≈°lji sam od covjeka koji se zove __________ za ______ cm". To znaci a morate imati u kodu ucitavanje 2 vrijednosti imena, 2 vrijednosti visine i 2 vrijednosti grada, te dvije solucije teksta ovisno o tome koji je lik vi≈°lji.
+Napiöite skriptu koja ucitava javne vrijednosti te te podatke ispisuje u navedeni tekst:
+"Moje ime je _________ i ja dolazim iz grada koji se zove ___________, a viölji sam od covjeka koji se zove __________ za ______ cm". To znaci a morate imati u kodu ucitavanje 2 vrijednosti imena, 2 vrijednosti visine i 2 vrijednosti grada, te dvije solucije teksta ovisno o tome koji je lik viölji.
 
 public string ime1;
 public string ime2;
@@ -1699,11 +1699,11 @@ void Start()
 {
 	if(visina1 > visina2)
 	{
-		Debug.Log("Moje ime je " + ime1 + " i ja dolazim iz grada koji se zove " + grad1 + ", a vi≈°lji sam od covjeka koji se zove " + ime2 + " za " + (visina1 - visina2) + " cm.");
+		Debug.Log("Moje ime je " + ime1 + " i ja dolazim iz grada koji se zove " + grad1 + ", a viölji sam od covjeka koji se zove " + ime2 + " za " + (visina1 - visina2) + " cm.");
 	}
 	else if(visina1 < visina2)
 	{
-		Debug.Log("Moje ime je " + ime2 + " i ja dolazim iz grada koji se zove " + grad2 + ", a vi≈°lji sam od covjeka koji se zove " + ime1 + " za " + (visina2 - visina1) + " cm.");
+		Debug.Log("Moje ime je " + ime2 + " i ja dolazim iz grada koji se zove " + grad2 + ", a viölji sam od covjeka koji se zove " + ime1 + " za " + (visina2 - visina1) + " cm.");
 	}
 }
 
@@ -1715,14 +1715,14 @@ Papirici
 
 	Float
 
-2) Napi≈°i skriptu koja definira vrijednost: 5, -8.25: "≈°to si tako zao ≈æivote".
+2) Napiöi skriptu koja definira vrijednost: 5, -8.25: "öto si tako zao ûivote".
    int x = 5;
    float y = -8.25f;
-   string ime = "≈°to si tako zao ≈æivote";
+   string ime = "öto si tako zao ûivote";
 
 
-3) Neka je x 17 a b javni float. Ako je x veci od y ispi≈°i ga svaki frame a ostalo
-ispi≈°i ga (x) prije nultog framea.
+3) Neka je x 17 a b javni float. Ako je x veci od y ispiöi ga svaki frame a ostalo
+ispiöi ga (x) prije nultog framea.
 
 int x = 17;
 public float b;
@@ -1749,7 +1749,7 @@ void Update()
 	}
 }
 
-4) ≈†to ce se ispisati?
+4) äto ce se ispisati?
 
 public int x = 10;
 public int y = 17;
@@ -1772,7 +1772,7 @@ void Start()
   Debug.Log(a+b);
 }
 
-≈†TO SE ISPISUJE?
+äTO SE ISPISUJE?
 
 ODGOVOR: 12
 
@@ -1782,9 +1782,9 @@ ODGOVOR: 12
 WHILE PETLJA (dok petlja)
 
 odvija s dok je tvrdnja tocna
-OPASNA ZA UNITY! - ako je napisano krivo ru≈°i (crasha) Unity, ali ne samo Unity nego u gorim situacijama mo≈æe izbrisati dio projekta i/ili ugasiti racunalo
+OPASNA ZA UNITY! - ako je napisano krivo ruöi (crasha) Unity, ali ne samo Unity nego u gorim situacijama moûe izbrisati dio projekta i/ili ugasiti racunalo
 
-Kako se pi≈°e while petlja:
+Kako se piöe while petlja:
 
 while(uvijet)
 {
@@ -1792,7 +1792,7 @@ while(uvijet)
 	naredba koja utjece na uvijet;
 }
 
-*Infinity loop* - while petlja (ne samo while) koja se ponavlja u beskonacnost jer joj uvijet nikada ne mo≈æe prestati vrijediti jer naredba koja utjece na nju ne radi pravilno
+*Infinity loop* - while petlja (ne samo while) koja se ponavlja u beskonacnost jer joj uvijet nikada ne moûe prestati vrijediti jer naredba koja utjece na nju ne radi pravilno
 
 Primjer pravilnog:
 
@@ -1832,7 +1832,7 @@ void Update()
 	{
 		if(spawned == false)
 		{
-			//ucini ne≈°to
+			//ucini neöto
 		}
 		else if(timer >= 2.0f)
 		{
@@ -1842,7 +1842,7 @@ void Update()
 }
 
 90)
-Napi≈°ite while petlju koja je istinita dok god je int x vece ili jednako od 0. U while petlji treba biti naredba koja x smanjuje za 2, te ispisuje u konzoli "Ja volim " + x.
+Napiöite while petlju koja je istinita dok god je int x vece ili jednako od 0. U while petlji treba biti naredba koja x smanjuje za 2, te ispisuje u konzoli "Ja volim " + x.
 
 public int x;
 
@@ -1856,8 +1856,8 @@ void Start()
 }
 
 91)
-Napi≈°ite skriptu koja ce ugasiti igru ako je slucajno igracev health pao ispod 0 ili je 0.
-Naredba koja gasi igru (.exe) se pi≈°e: Application.Quit();
+Napiöite skriptu koja ce ugasiti igru ako je slucajno igracev health pao ispod 0 ili je 0.
+Naredba koja gasi igru (.exe) se piöe: Application.Quit();
 
 public float health = 100f;
 
@@ -1870,7 +1870,7 @@ void Update()
 }
 
 92)
-Napi≈°ite skriptu koja ce imati va≈°u vlasititu metodu. Ta va≈°a vlastita metoda mora ispisati u konzoli "Pro≈°lo je 60", svaki put kada se prika≈æe 60 frameova. (brojac koji broji frameove se resetira nakon 60 frameova i ponovo broji do 60 i tako dok god skripta radi)
+Napiöite skriptu koja ce imati vaöu vlasititu metodu. Ta vaöa vlastita metoda mora ispisati u konzoli "Proölo je 60", svaki put kada se prikaûe 60 frameova. (brojac koji broji frameove se resetira nakon 60 frameova i ponovo broji do 60 i tako dok god skripta radi)
 
 int frameCount = 0; //broja koliko se frameova pokazalo
 
@@ -1884,13 +1884,13 @@ void FrameCounterShow()
 {
 	if(frameCount == 60)
 	{
-		Debug.Log("Pro≈°lo je 60");
+		Debug.Log("Proölo je 60");
 		frameCount = 0;
 	}
 }
 
 93)
-Napi≈°ite for petlju koja pi≈°e u konzoli odbrojavanje (npr. 10, 9, 8, 7...), ali krece od pocetne javne vrijednosti, te ne smije pasti ispod 0 (zadnji broj zapisani u ispisu treba biti 0). U slucaju da je broj upisan negativan (npr. -102) onda ga se treba pretvoriti prvo u pozitivan i krenuti odbrojavati, a ako je 0 onda se treba pretvoriti u 10.
+Napiöite for petlju koja piöe u konzoli odbrojavanje (npr. 10, 9, 8, 7...), ali krece od pocetne javne vrijednosti, te ne smije pasti ispod 0 (zadnji broj zapisani u ispisu treba biti 0). U slucaju da je broj upisan negativan (npr. -102) onda ga se treba pretvoriti prvo u pozitivan i krenuti odbrojavati, a ako je 0 onda se treba pretvoriti u 10.
 
 public int javno = 10;
 
@@ -1919,7 +1919,7 @@ void Start()
 
 
 94)
-Vrijednost X je javna, dok god je vrijednost y = 10 (pocetna y je 10 iako je y javan), oduzmite od X y (ne pohranjujete rezultat u X), te ako je rezultat oduzimanja negativan broj (manji od 0) neka se ispi≈°e "Negativo", ako je veci ispi≈°ite "Pozitivno", a ako je 0 neka se ispi≈°e "Neutralno". Svaki put kada se ispi≈°e tekst u konzoli neka se y umanji za 0.5.
+Vrijednost X je javna, dok god je vrijednost y = 10 (pocetna y je 10 iako je y javan), oduzmite od X y (ne pohranjujete rezultat u X), te ako je rezultat oduzimanja negativan broj (manji od 0) neka se ispiöe "Negativo", ako je veci ispiöite "Pozitivno", a ako je 0 neka se ispiöe "Neutralno". Svaki put kada se ispiöe tekst u konzoli neka se y umanji za 0.5.
 
 
 public float x = 0f;
@@ -1947,7 +1947,7 @@ void Update()
 
 
 95)
-Napi≈°ite skriptu koja unosi igraceve informacije (username, ime championa, level, hp + 2 po izboru). Podatci se trebaju ispisati "Player (username) is playing with (champion). (username) is (level) level starting with: (hp) + (2 vase varijable)" Podatci se ispisuju tako da svaki frame se hp smanjuje za 1. Kada je igracu HP pao ispod 0 ili je 0 neka se ispi≈°e SAMO JEDNOM "Player (username) has been killed". Poslje ispisa da je igrac umro se ne smije vi≈°e ni≈°ta ispisivati.
+Napiöite skriptu koja unosi igraceve informacije (username, ime championa, level, hp + 2 po izboru). Podatci se trebaju ispisati "Player (username) is playing with (champion). (username) is (level) level starting with: (hp) + (2 vase varijable)" Podatci se ispisuju tako da svaki frame se hp smanjuje za 1. Kada je igracu HP pao ispod 0 ili je 0 neka se ispiöe SAMO JEDNOM "Player (username) has been killed". Poslje ispisa da je igrac umro se ne smije viöe niöta ispisivati.
 
 
 
@@ -1975,54 +1975,284 @@ void Update()
 	}
 }
 
----
-96)
 
-Imamo 2 public int-a nazovimo ih start i end. 
-U Start methodi ispisati -1 ako je start broj manji od nule ili end broj manji od nule ili end manji od start broja.
-Ako nije onda zbrojiti sve neparne brojeve izmedu start (inkluzivno) i end (inkluzivno) brojeva. 
-Nakon toga ispisati taj zbroj. Inkluzivno znaƒçi ukljucujuci.
+Papirici:
+1)
 
-97)
+äto ce uciniti ova metoda Update?
 
-Imamo public int nazovimo ga number. U Start methodi ispi≈°i -1 ako je public int (number) negativan.
-A ako nije negativan ispisi zbroj prve i zadnje znamenke.
-Tip: Koristi while.
+int x= 4;
 
-* Primjeri: *
--> ako je number 252 -> ispisati se treba 4 jer prva znamenka je 2 (gledano s ljeva) i zadnja je (gledano s ljeva) pa 2 + 2 = 4
--> ako je number 257 -> ispisati se treba 9 jer 2 + 7 = 9 -> 2 je prva 7 je zadnja
--> ako je number 0 -> ispisati se treba 0
--> ako je number 10 -> ispisati se treba 1 jer 1 + 0 = 1
--> ako je number 12587 -> ispisati se treba 8 jer je 1 + 7 = 8
--> ako je number 5 -> ispisati se treba 10, jer je 5 prva i zadnja znaci 5 + 5 = 10
--> ako je number -10 -> ispisati se treba -1 jer je -10 negativan
+void Update()
+{
+	while(x>0)
+	{	
+		if(x>0)
+		{ 
+			Application.Quit();
+		}
+		x++;
+	}	
+}
 
-98)
 
-Definiraj public int i nazovi ga godina.
-Ukoliko je godina manja od 1 ili veca od 9999 ispisati "Godina nije dobra". 
-U suprotnom provjeriti dali je godina prijestupna.
-Za provjeru dali je godina prijestupna koristi sljedeƒáe korake
--> Godina je prijestupna ako se moze cijelobrojno podjeliti sa 4 (npr. 2016, 2020,2024, ...),
--> osim ako je cijelobrojno djeljiva sa 100 onda nije prijestupna (npr. 2100, 2200, ...).
--> A ako je cijeloborojno djeljiva sa 400 onda je prijestupna (npr. 2000, 2400, ...)
- 
-Info: https://en.wikipedia.org/wiki/Leap_year
-Vidi dio pseudo kod na linku iznad.
+ugasit ce program
 
-99)
+2) Neka je X 4, a Y 5 i neka se njihov zbroj izracuna u startu u varijablu Z, a onda neka se svaki frame Z uveca za X.
 
-Definiraj public broj koji representira/predstavlja broj kilobajta.
-Ako je broj kilobajta negativan u Start methodi ispi≈°i text "Broj ne valja.".
-A ako je broj kilobajta positivan ispi≈°i koliko je to megabajta i kilobajta.
+int X = 4;
+int Y = 5;
+int Z;
 
-* Primjeri: *
-Ako su kilobajti 1025 ispisati "1025 KB je 1 MB i 1 KB."
-Ako su kilobajti -10 ispisati "Broj ne valja."
-Ako su kilobajti 3000 ispisati "3000 KB je 2 MB i 952 KB."
+void Start()
+{
+	Z = X + Y;
+}
 
-Tip: 1 MB (MegaBajt) je 1024 KB (kiloBajta)
+void Update()
+{
+	Z += X;
+}
+
+
+3) Napisi metodu Odbrojac koja odbrojava od 5 do 0
+   i koristi while petlju. Metoda ispisuje brojeve
+   od 5 do 0.
+
+int x = 5;
+
+void Start
+{
+	while(x <= 5 && x >= 0)
+	{
+		Odbrojac();
+	}
+
+}
+void Odbrojac()
+{
+	Debug.Log(x);
+	x--;
+}
+
+4) Napiöi for petlju koja prvi frame ispisuje neparne brojeve od x do y koji je 90.
+
+public int x;
+int y = 90;
+
+void Start()
+{
+	if ( x <= y) 
+	{
+   		for (int i = x; i <= y ; i++)
+   		{
+   			if(i % 2 !=0)
+			{
+				Debug.Log(i);
+			}
+   		}
+	}
+	else 
+	{
+   		for (int i = x; i >= y ; i--)
+   		{
+   			if(i % 2 !=0)
+			{
+				Debug.Log(i);
+			}
+   		}
+	}
+}
+
+5)
+   Crashaj Unity!
+Ne ozbiljno, izadi na ploci i napiöi skriptu koja crasha Unity!
+
+
+int x = 420;
+
+void Update()
+{
+	while(x > 0)
+	{
+		Application.ForceCrash();
+	}
+}
+
+PONAVLJANJE PRIJE KRAJA OSNOVA PROGRAMIRANJA:
+
+for petlja
+
+for(brojac, uvijet; inkrement/dekrement)
+{
+	naredba;
+}
+
+ispiöite sve brojeve od 0 do neke javne vrijednosti
+
+public int a = 54;
+
+void Start()
+{
+	for(int i = 0; i < a; i++)
+	{
+		Debug.Log(i);
+	}
+}
+
+ispiöite sve brojeve od javne vrijednosti do nula (javna vrijesnot se moûe unjeti samo pozitivan broj)
+
+public int b = 15;
+
+void Start()
+{
+	for(int i = b; i >= 0; i--)
+	{
+		Debug.Log(i);
+	} 
+}
+
+Ispiöite sve parne vrijednosti od neke javne vrijednosti do 0
+
+public int z = 10;
+int i = 15;
+
+void Start()
+{
+	for(int i = z; i >= 0; i--)
+	{
+		if(i % 2 == 0)
+		{
+			Debug.Log(i);
+		}
+	}
+}
+
+BOOL
+Neka se zbrajaju dva javna broja, ako je njihov zbroj veci od 15 neka bool endGame postane true, ako su manji ili jednaki neka je false. Ako je endGame true onda neka se ispiöe u konzoli da je igra zavröena, a ako je false neka ispiöe preûivio si
+
+
+
+
+TEäKI ZADATCI ZA KRAJ:
+
+1.) Isprogramirajte osnovni krizic kruzic. (bez programskog djela unosa X i O igraca).
+Dakle imajte dve javne vrijednosti za imena igraca. Imajte dodjelu koji je igrac X a koji O. Dodjelite vrijednosti svih 9 polja. Napravite svoju skriptu koja provjerava ako je jedan igrac napravio niz od 3 za pobjedu.
+
+
+2.) Napiöite skriptu gdje igrac unosi 15 ocijena (Hrv, Mat, Eng itd.). U slucaju da ima 3 ili viöe jedinica neka mu se ispiöe da pada razred, u suprotnom neka mu se izracuna prosjek.
+
+public int predmet1;
+public int predmet2;
+public int predmet3;
+public int predmet4;
+public int predmet5;
+public int predmet6;
+public int predmet7;
+public int predmet8;
+public int predmet9;
+public int predmet10;
+public int predmet11;
+public int predmet12;
+public int predmet13;
+public int predmet14;
+public int predmet15;
+
+int brojJedinica;
+int zbrojOcijena;
+
+private void Start()
+{
+	for (int i = 1; i < 15; i++)
+	{	
+		var predmetZaProvjeru = "predmet"[i];
+		if(predmetzaProvjeru <= 1)
+		{
+			brojJedinica++;
+		}
+            	zbrojOcijena += predmetZaProvjeru;
+        }
+	if(brojJedinica >= 3)
+	{
+		Debug.Log("Pao si rezred!");
+	}
+	else
+	{
+		Debug.Log("Prosjek je" + (zbrojOcijena / 15));
+	}
+    }
+
+3.) Napravite program za upis u srednju ökolu. U inspectoru se unose vrijednosti hrv za 7 i 8 razred i isto tako za eng i matematiku. Zatim neka su dva javna stringa za dva predmeta koji se traze (npr. fizika i kemija) sa ocjenama iz 7 i 8 razreda. Zatim se gleda prosjek ocijena iz 5,6,7 i 8 razreda. Broj bodova je zbroj ocijena svih unesenih. Imajte provjeru da unesena ocijena mora biti veca od jedan i manja od 6.
+
+4.) Napiöite skriptu koja ce nam imati sva obiljeûja championa iz MOBA tipa igre. Takoder pripremite i moci, dmg za njega sve potreben informacije koje smatrate da jedan MOBA champion ima. (Nemojte zaboraviti provjeru jel umro, respawn itd.)
+
+5.) Napiöite skritpu gdje igrac unosi rijecima boju: (CRVENA, BIJELA, PLAVA, CRNA, éUTA, ZELENA) te mu se u konzoli za tu boju ispisuje HEX-a vrijednosti i RGB vrijednost kao npr.
+Unos = BIJELA
+U konzoli:
+R: 255, G: 255, B: 255
+#FFFFFF
+Vrijednosti mozete naci na internetu: 
+https://www.rapidtables.com/web/color/RGB_Color.html
+
+public string unos;
+
+void Start()
+{
+
+	if(unos == BIJELA || unos == Bijela || unos == bijela)
+	{
+		Debug.Log("unos = " + unos);
+		Debug.Log("R = 255, G = 255, B = 255");
+		Debug.Log("#FFFFFF");
+
+	}
+	else if (unos == CRVENA || unos == Crvena || unos == crvena)
+	{
+		Debug.Log("unos = " + unos);
+		Debug.Log("R = 255, G = 0, B = 0");
+		Debug.Log("FF0000");
+	}
+	else if (unos == PLAVA || unos == Plava || unos == plava)
+	{
+		Debug.Log("unos = " + unos);
+		Debug.Log("R = 0, G = 0, B = 255");
+		Debug.Log("0000FF");
+	}
+	else if (unos == CRNA || unos == Crna || unos == crna)
+	{
+		Debug.Log("unos = " + unos);
+		Debug.Log("R = 0, G = 0, B = 0");
+		Debug.Log("000000");
+	}
+	else if (unos == ZUTA || unos == Zuta || unos == zuta || unos == éUTA || unos == éuta || unos == ûuta)
+	{
+		Debug.Log("unos = " + unos);
+		Debug.Log("R = 255, G = 255, B = 0");
+		Debug.Log("FFF000");
+	}
+	else if (unos == ZELENA || unos == Zelena || unos == zelena)
+	{
+		Debug.Log("unos = " + unos);
+		Debug.Log("R = 0, G = 255, B = 0");
+		Debug.Log("00FF00");
+	}
+}
+
+6.) Neka se upisuje vrijednost u intu, a zatim string sa igracevim imenom. Potom neka se za vrijednost inta ispise ime npr. ako je ime "Marko" a int 3 onda ce se ispisati:
+"MarkoMarkoMarko" i pohrati ce se vrijednost u string imena.
+
+7.) Rafaelina papiga, cije je ime Papigapapigapapigapapigapapiga, cim nauci neku novu rijec, pocinje je
+izgovarati uzastopno bez prestanka. Rafaela je uocila da ce papiga svaku rijec najprije izgovoriti tocno pet
+puta bez stanke. Na primjer, rijec Ñdedaì bit ce izgovorena kao Ñdedadedadedadedadedaì.
+Napiöi program koji, za zadanu rijec, ispisuje papigin izgovor te rijeci.
+Npr. Deda - DedaDedaDedaDedaDeda, ho - hohohohoho
+
+
+8.) Kada Perica ugleda prirodan broj, on odmah provjeri je li taj broj Ñnogometanì ili kako se joö kaûe Ñnajvaûniji sporedan broj na svijetuì. Broj je nogometan ako je u njemu moguce pronaci tri uzastopne znamenke ciji je zbroj jednak deset. Npr. brojevi 442 i 352 su nogometni. Napiöi program koji ce za zadani prirodan broj N provjeriti jel on nogometan. (unos je izmedu 100 i 999)
+
+9.) 
+
+
 
 
 
