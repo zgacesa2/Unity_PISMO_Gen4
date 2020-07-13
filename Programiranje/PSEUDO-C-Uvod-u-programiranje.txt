@@ -2146,6 +2146,30 @@ Dakle imajte dve javne vrijednosti za imena igraca. Imajte dodjelu koji je igrac
 
 4.) Napišite skriptu koja ce nam imati sva obilježja championa iz MOBA tipa igre. Takoder pripremite i moci, dmg za njega sve potreben informacije koje smatrate da jedan MOBA champion ima. (Nemojte zaboraviti provjeru jel umro, respawn itd.)
 
+5.) Napišite skritpu gdje igrac unosi rijecima boju: (CRVENA, BIJELA, PLAVA, CRNA, ŽUTA, ZELENA) te mu se u konzoli za tu boju ispisuje HEX-a vrijednosti i RGB vrijednost kao npr.
+Unos = BIJELA
+U konzoli:
+R: 255, G: 255, B: 255
+#FFFFFF
+Vrijednosti mozete naci na internetu: 
+https://www.rapidtables.com/web/color/RGB_Color.html
+
+6.) Neka se upisuje vrijednost u intu, a zatim string sa igracevim imenom. Potom neka se za vrijednost inta ispise ime npr. ako je ime "Marko" a int 3 onda ce se ispisati:
+"MarkoMarkoMarko" i pohrati ce se vrijednost u string imena.
+
+7.) Rafaelina papiga, cije je ime Papigapapigapapigapapigapapiga, cim nauci neku novu rijec, pocinje je
+izgovarati uzastopno bez prestanka. Rafaela je uocila da ce papiga svaku rijec najprije izgovoriti tocno pet
+puta bez stanke. Na primjer, rijec „deda“ bit ce izgovorena kao „dedadedadedadedadeda“.
+Napiši program koji, za zadanu rijec, ispisuje papigin izgovor te rijeci.
+Npr. Deda - DedaDedaDedaDedaDeda, ho - hohohohoho
+
+
+8.) Kada Perica ugleda prirodan broj, on odmah provjeri je li taj broj „nogometan“ ili kako se još kaže „najvažniji sporedan broj na svijetu“. Broj je nogometan ako je u njemu moguce pronaci tri uzastopne znamenke ciji je zbroj jednak deset. Npr. brojevi 442 i 352 su nogometni. Napiši program koji ce za zadani prirodan broj N provjeriti jel on nogometan. (unos je izmedu 100 i 999)
+
+9.) 
+
+
+
 
 
 
