@@ -2250,7 +2250,63 @@ Npr. Deda - DedaDedaDedaDedaDeda, ho - hohohohoho
 
 8.) Kada Perica ugleda prirodan broj, on odmah provjeri je li taj broj „nogometan“ ili kako se još kaže „najvažniji sporedan broj na svijetu“. Broj je nogometan ako je u njemu moguce pronaci tri uzastopne znamenke ciji je zbroj jednak deset. Npr. brojevi 442 i 352 su nogometni. Napiši program koji ce za zadani prirodan broj N provjeriti jel on nogometan. (unos je izmedu 100 i 999)
 
-9.) 
+public int number = 442;
+
+private void Start() {
+    var sum = 0;
+
+    if (number < 99 || number > 999) {
+        // validation
+        Debug.Log("Broj nije izmedu 100 i 999");
+    } else {
+        // number is valid
+        while (number > 0) {
+            var digit = number % 10; // 442 % 10 = 2
+            sum += digit;
+
+            number /= 10; // iteration -> 442 / 10 = 44....
+        }
+
+        if (sum == 10) {
+            Debug.Log("Nogometan");
+        } else {
+            Debug.Log("Nije Nogometan");
+        }
+    }
+}
+
+Zadatci papirici:
+
+1) Što ce se ispisati?
+
+public int broj = 5;
+public int drugi = 2;
+
+void Start()
+
+{
+	Debug.Log(broj%drugi);
+}
+
+//broj % drugi = 5 % 2  a to je naredba koja dijeli sa 2 i ispisuje ostatak
+
+5 dijeljeno 2 je 2 sa ostatkom jedan pa ce se ispisati 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
