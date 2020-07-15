@@ -27,4 +27,4 @@ Neka se sfera pozicionira na poziciju 0, 12, 3.75 u početku igre
 Napravite skriptu koja može pomicati kocku po svim osima (javne varijable), rotirati (javne varijable) i povećavati (javne varijable) svake sekunde
 
 10)
-Napravite skriptu gdje se kocka povećava ili smanjuje (do maksimalno 1o i minimalno 0.1) po sve 3 osi i rotira po sve 3 osi uz javne varijable. Opis: Efekt kao da pulsira do 10 i nazad do 0.1 pa opet do 10 pa opet do 0.1 itd.
+Napravite skriptu gdje se kocka povećava ili smanjuje (do maksimalno 10 i minimalno 0.1) po sve 3 osi i rotira po sve 3 osi uz javne varijable. Opis: Efekt kao da pulsira do 10 i nazad do 0.1 pa opet do 10 pa opet do 0.1 itd.
