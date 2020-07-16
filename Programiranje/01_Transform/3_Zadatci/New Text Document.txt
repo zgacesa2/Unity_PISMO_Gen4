@@ -1,9 +1,0 @@
-1.)
-Napišite na drugačiji način ili na ispravan način sljedeće naredbe:
-
-transform.Rotate(Vector3.up);
-transform.Rotate(Vector3.one);
-transform.rotate(Vector2.down);
-transform.Rotate(new Vector3(1, 0, 1));
-transform.position += new Vector3(1,1,1);
-transform.localScale += new Vector3-(1,5,1);
