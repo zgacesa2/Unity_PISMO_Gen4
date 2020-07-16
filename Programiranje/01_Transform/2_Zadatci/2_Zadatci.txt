@@ -2,7 +2,18 @@ DZ - Zadatci
 
 1.) Što je MonoBehaviour?
 
-2.) Glavne funkcije MonoBehavioura su:
+Matična (bazna) klasa za ostale klase i naše skripte u Unityu
+
+2.) Glavne funkcije/metode MonoBehavioura su:
+
+- Start
+- Update
+- Awake
+- FixedUpdate
+- LateUpdate
+- OnEnable
+- OnDisable
+- OnGUI
 
 3.) Napišite skriptu koja će imati Debug.Log() na:
 a) Awake
