@@ -8,3 +8,5 @@
 
 5) Unesite 4 javne vrijednosti (int, int, float, float)
 Neka se radi provjera svaki frame i dok god je jednadžba istinita neka se objekt povećava za 1 po sekundi i rotira za 2 po sekundi (sve osi). U slučaju kada jednadžba nije istinita neka se objekt smanjuje za 2 po sekundi i rotira za 1 po sekundi (sve osi). Jednadžba: int1 * int2 + float1 - float2 * int1 >= int1 * int2 * float1 / float2
+
+6) Učini da se kocka rotira po svim osima u isto vrijeme na najkraći način.
