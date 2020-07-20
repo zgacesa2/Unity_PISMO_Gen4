@@ -4,7 +4,7 @@ Rigidbody 2 zadatci
 
 2. U skripti definirajte janvu varijablu "mass". Rigidbodyu povećajte težinu NA vrijednost javne varijable
 
-3. Rigidboyu na klik "K" ukljucite ili iskljucite kinematiku, a na klik g uključite ili isključite gravitaciju
+3. Rigidboyu na pritisak tipke "K" ukljucite ili iskljucite kinematiku, a na klik g uključite ili isključite gravitaciju
 
 4. U start metodu napravite var vrstu varijable gdje pristupate isključivo gravitaciji rigidbodya te ju isključite
 
