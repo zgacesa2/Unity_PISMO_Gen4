@@ -11,7 +11,6 @@ public class Zadatak4 : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.constraints = RigidbodyConstraints.FreezeRotationZ;
-        rb.constraints = RigidbodyConstraints.FreezePositionX;
+        rb.constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
     }
 }
