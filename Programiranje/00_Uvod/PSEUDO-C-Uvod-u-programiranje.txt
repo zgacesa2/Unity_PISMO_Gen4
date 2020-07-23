@@ -2190,52 +2190,388 @@ TEŠKI ZADATCI ZA KRAJ:
 1.) Isprogramirajte osnovni krizic kruzic. (bez programskog djela unosa X i O igraca).
 Dakle imajte dve javne vrijednosti za imena igraca. Imajte dodjelu koji je igrac X a koji O. Dodjelite vrijednosti svih 9 polja. Napravite svoju skriptu koja provjerava ako je jedan igrac napravio niz od 3 za pobjedu.
 
+private void Update()
+    {
+        if (l_x_1 = true && l_x_2 = true && l_x_3 = true)
+        {
+            Debug.Log("x player win");
+        }
+
+        if (s_x_1 = true && s_x_2 = true && s_x_3 = true)
+        {
+            Debug.Log("x player win");
+        }
+
+        if (r_x_1 = true && r_x_2 = true && r_x_3 = true)
+        {
+            Debug.Log("x player win");
+        }
+
+        if (l_x_1 = true && s_x_2 = true && r_x_3 = true)
+        {
+            Debug.Log("x player win");
+        }
+
+        if (r_x_1 = true && s_x_2 = true && l_x_3 = true)
+        {
+            Debug.Log("x player win");
+        }
+
+        if (r_x_1 = true && s_x_1 = true && l_x_1 = true)
+        {
+            Debug.Log("x player win");
+        }
+
+        if (r_x_2 = true && s_x_2 = true && l_x_2 = true)
+        {
+            Debug.Log("x player win");
+        }
+
+        if (r_x_3 = true && s_x_3 = true && l_x_3 = true)
+        {
+            Debug.Log("x player win");
+        }
+
+        if (l_O_1 = true && l_O_2 = true && l_O_3 = true)
+        {
+            Debug.Log("O player win");
+        }
+
+        if (s_O_1 = true && s_O_2 = true && s_O_3 = true)
+        {
+            Debug.Log("O player win");
+        }
+
+        if (r_O_1 = true && r_O_2 = true && r_O_3 = true)
+        {
+            Debug.Log("O player win");
+        }
+
+        if (l_O_1 = true && s_O_2 = true && r_O_3 = true)
+        {
+            Debug.Log("O player win");
+        }
+
+        if (r_O_1 = true && s_O_2 = true && l_O_3 = true)
+        {
+            Debug.Log("O player win");
+        }
+
+        if (r_O_1 = true && s_O_1 = true && l_O_1 = true)
+        {
+            Debug.Log("O player win");
+        }
+
+        if (r_O_2 = true && s_O_2 = true && l_O_2 = true)
+        {
+            Debug.Log("O player win");
+        }
+
+        if (r_O_3 = true && s_O_3 = true && l_O_3 = true)
+        {
+            Debug.Log("O player win");
+        }
+    }
 
 2.) Napišite skriptu gdje igrac unosi 15 ocijena (Hrv, Mat, Eng itd.). U slucaju da ima 3 ili više jedinica neka mu se ispiše da pada razred, u suprotnom neka mu se izracuna prosjek.
+HRVATSKI JEZIK - 5 sati
+LIKOVNA KULTURA  - 1 sat
+GLAZBENA KULTURA  - 1 sat
+ENGLESKI JEZIK  - 3 sata
+MATEMATIKA - 4 sata
+BIOLOGIJA - 2 sata
+KEMIJA - sata
+FIZIKA  - 2 sata
+GEOGRAFIJA - 2 sata
+POVIJEST- 2 sata
+TJELESNA I ZDRAVSTVENA KULTURA  - 2 sata
+TEHNICKA KULTURA  - 1 sat
+VJERONAUK - izborni predmet (rimokatolicki i islamski) - 2 sata
+TALIJANSKI JEZIK - izborni predmet -  2 sata
+INFORMATIKA - izborni predmet - 2 sata
+*/
+    
+public class TZad2 : MonoBehaviour {
 
-public int predmet1;
-public int predmet2;
-public int predmet3;
-public int predmet4;
-public int predmet5;
-public int predmet6;
-public int predmet7;
-public int predmet8;
-public int predmet9;
-public int predmet10;
-public int predmet11;
-public int predmet12;
-public int predmet13;
-public int predmet14;
-public int predmet15;
+    private const int MaxJedinica = 3;
+    private const int Count = 15;
 
-int brojJedinica;
-int zbrojOcijena;
+    public int hrvatskiJezik = 1;
+    public int likovnaKultura = 2;
+    public int glazbenaKultura = 3;
+    public int engleskiJezik = 4;
+    public int matematika = 5;
+    public int biologija = 1;
+    public int kemija = 2;
+    public int fizika = 3;
+    public int geografija = 4;
+    public int povijest = 5;
+    public int tjelesni = 1;
+    public int tehnickaKultura = 2;
+    public int vjeronauk = 3;
+    public int talijanki = 4;
+    public int informatika = 5;
 
-private void Start()
-{
-	for (int i = 1; i < 15; i++)
-	{	
-		var predmetZaProvjeru = "predmet"[i];
-		if(predmetzaProvjeru <= 1)
-		{
-			brojJedinica++;
-		}
-            	zbrojOcijena += predmetZaProvjeru;
+    private int brojJedinica;
+    private int sum;
+
+    private void Start() {
+        // use for with strings or array
+        CountAndSum(hrvatskiJezik);
+        CountAndSum(likovnaKultura);
+        CountAndSum(glazbenaKultura);
+        CountAndSum(engleskiJezik);
+        CountAndSum(matematika);
+        CountAndSum(biologija);
+        CountAndSum(kemija);
+        CountAndSum(fizika);
+        CountAndSum(geografija);
+        CountAndSum(povijest);
+        CountAndSum(tjelesni);
+        CountAndSum(tehnickaKultura);
+        CountAndSum(vjeronauk);
+        CountAndSum(talijanki);
+        CountAndSum(informatika);
+
+        if (brojJedinica >= MaxJedinica) {
+            Debug.Log("Padaš Razred");
+        } else {
+            float avg = sum / (float)Count;
+            Debug.Log($"Avg= {avg}");
         }
-	if(brojJedinica >= 3)
-	{
-		Debug.Log("Pao si rezred!");
-	}
-	else
-	{
-		Debug.Log("Prosjek je" + (zbrojOcijena / 15));
-	}
     }
+
+    private void CountAndSum(int ocijenaPredmeta) {
+        sum += ocijenaPredmeta;
+
+        if (ocijenaPredmeta == 1) {
+            brojJedinica++;
+        }
+    }
+
+}
 
 3.) Napravite program za upis u srednju školu. U inspectoru se unose vrijednosti hrv za 7 i 8 razred i isto tako za eng i matematiku. Zatim neka su dva javna stringa za dva predmeta koji se traze (npr. fizika i kemija) sa ocjenama iz 7 i 8 razreda. Zatim se gleda prosjek ocijena iz 5,6,7 i 8 razreda. Broj bodova je zbroj ocijena svih unesenih. Imajte provjeru da unesena ocijena mora biti veca od jedan i manja od 6.
 
+public class Upis_u_srednju_skolu : MonoBehaviour
+{
+    public int hrv7;
+    public int hrv8;
+    public int eng7;
+    public int eng8;
+    public int mat7;
+    public int mat8;
+    public int izborni1_7;
+    public int izborni1_8;
+    public int izborni2_7;
+    public int izborni2_8;
+    public string izborniIme_7;
+    public string izborniIme_8;
+    public string izborni2Ime_7;
+    public string izborni2Ime_8;
+    float prosjekSve;
+    float bodovi;
+    bool ispravno = true;
+
+    private void Update()
+    {
+        prosjekSve = (hrv7 + hrv8 + eng7 + eng8 + mat7 + mat8 + izborni1_7 + izborni1_8 + izborni2_7 + izborni2_8) / 10;
+        bodovi = hrv7 + hrv8 + eng7 + eng8 + mat7 + mat8 + izborni1_7 + izborni1_8 + izborni2_7 + izborni2_8;
+        if(hrv7 < 6 && hrv7 > 1 && hrv8 > 1 && hrv8 < 6 && mat7 > 1 && mat7 < 6 && mat8 > 1 && mat8 < 6 && eng7 > 1 && eng7 < 6 && eng8 > 1 && eng8 < 6 && izborni1_7 > 1 && izborni1_7 < 6 && izborni1_8 > 1 && izborni1_8 < 6 && izborni2_7 > 1 && izborni2_7 < 6 && izborni2_8 > 1 && izborni2_8 < 6)
+        {
+            ispravno = true;
+            Debug.Log("Unos ocjena je ispravan, upis moguc");
+        }
+        else
+        {
+            ispravno = false;
+            Debug.Log("Unos ocjena je neispavan, provjeri unos");
+        }
+    }
+}
+
 4.) Napišite skriptu koja ce nam imati sva obilježja championa iz MOBA tipa igre. Takoder pripremite i moci, dmg za njega sve potreben informacije koje smatrate da jedan MOBA champion ima. (Nemojte zaboraviti provjeru jel umro, respawn itd.)
+
+public string championName = "default";
+    public string playerName = "Keks";
+
+    public float maxHealth = 100;
+    public float currentHealth = 100;
+    public float healthRegen = 1;
+    public float healthPerLevel = 10;
+    public float healthRegenperLevel = 0.1f;
+
+    public float maxMana = 50;
+    public float currentMana = 50;
+    public float manaRegen = 0.5f;
+    public float manaPerLevel = 5;
+    public float manaRegenPerLevel = 0.05f;
+
+    public float damage = 30;
+    public float damagePerLevel = 3;
+    public float attackSpeed = 100;
+    public float attackSpeedPerLevel = 10;
+
+    public float armor = 50;
+    public float armorPerLevel = 3;
+    public float magicResistance = 25;
+    public float magicResistancePerLevel = 2;
+
+    public float movementSpeed = 300;
+
+    public float gold = 600;
+    public float goldPerMinute = 60;
+
+    public int level = 1;
+    public float xp = 0;
+    public float xpForNextLevel = 1000;
+    // xpForNextLevel is multiplied by xpLevelMultiplier upon every level-up. For example,
+    // if it took 1000xp to reach level 2, it'll take 1000 * xpLevelMultiplier to reach level 3.
+    public float xpLevelMultiplier = 1.5f;
+
+    public int baseRespawnTime = 10;
+    public int respawnTimePerLevel = 5;
+    int totalRespawnTime;
+
+    public float abilityOneManaCost;
+    public float abilityOneValue;
+    public float abilityOneCooldown;
+    public bool abilityOneUsed;
+
+    public float abilityTwoManaCost;
+    public float abilityTwoValue;
+    public float abilityTwoCooldown;
+    public bool abilityTwoUsed;
+
+    public float abilityThreeManaCost;
+    public float abilityThreeValue;
+    public float abilityThreeCooldown;
+    public bool abilityThreeUsed;
+
+    public float abilityUltimateManaCost;
+    public float abilityUltimateValue;
+    public float abilityUltimateCooldown;
+    public bool abilityUltimateUsed;
+
+    public bool testDeath;
+    public bool testLevel;
+    bool dead;
+    bool firstSpawn;
+    
+    float timeCounter;
+    int respawnCounter;
+
+    void Start()
+    {
+        firstSpawn = true;
+        totalRespawnTime = baseRespawnTime + level * respawnTimePerLevel;
+        Spawn();
+    }
+
+    void Update()
+    {
+        if (currentHealth <= 0)
+        {
+            Death();
+        }
+
+        if (xp >= xpForNextLevel)
+        {
+            LevelUp();
+        }
+
+        timeCounter += timeCounter * Time.deltaTime;
+
+        if (timeCounter >= 1)
+        {
+            timeCounter = 0;
+            OneSecondPassed();
+        }
+    }
+
+    void Spawn()
+    {
+        // check first if it's not the player's first spawn for minor optimization because it is the more common case
+        if (!firstSpawn)
+        {
+            currentHealth = maxHealth;
+            currentMana = maxMana;
+
+            Debug.Log(playerName + " has Respawned!");
+        }
+        else
+        {
+            firstSpawn = false;
+
+            Debug.Log(playerName + " is playing " + championName + "!");
+        }
+
+        dead = false;
+    }
+
+    void LevelUp()
+    {
+        level++;
+        xp = 0;
+        xpForNextLevel *= xpLevelMultiplier;
+
+        maxHealth += healthPerLevel;
+        currentHealth += healthPerLevel;
+
+        maxMana += manaPerLevel;
+        currentMana += manaPerLevel;
+
+        damage += damagePerLevel;
+        attackSpeed += attackSpeedPerLevel;
+
+        armor += armorPerLevel;
+        magicResistance += magicResistancePerLevel;
+
+        totalRespawnTime = baseRespawnTime + level * respawnTimePerLevel;
+    }
+
+    void Death()
+    {
+        dead = true;
+        Debug.Log(championName + " has been slain!");
+    }
+
+    void OneSecondPassed()
+    {
+        gold += goldPerMinute / 60;
+
+        // for testing levelUp
+        if (testLevel)
+        {
+            xp += 100;
+        }
+
+        // for testing Death()
+        if (!dead && testDeath)
+        {
+            currentHealth -= healthRegen * 2;
+        }
+
+        if (dead)
+        {
+            // if champion is dead, count up the respawn counter towards the total respawn time one per second
+            // when respawnCounter equals total respawn time, player is respawned
+            // we count up to avoid changing the respawn timer variable itself
+            respawnCounter++;
+            if (respawnCounter >= totalRespawnTime)
+            {
+                respawnCounter = 0;
+                Spawn();
+            }
+            Debug.Log("Respawning in: " + (totalRespawnTime - respawnCounter) + " seconds.");
+        }
+        else
+        {
+            // if champion is alive, regen health and mana per second
+            currentHealth += healthRegen;
+            currentMana += manaRegen;
+        }
+    }
 
 5.) Napišite skritpu gdje igrac unosi rijecima boju: (CRVENA, BIJELA, PLAVA, CRNA, ŽUTA, ZELENA) te mu se u konzoli za tu boju ispisuje HEX-a vrijednosti i RGB vrijednost kao npr.
 Unos = BIJELA
@@ -2292,12 +2628,35 @@ void Start()
 6.) Neka se upisuje vrijednost u intu, a zatim string sa igracevim imenom. Potom neka se za vrijednost inta ispise ime npr. ako je ime "Marko" a int 3 onda ce se ispisati:
 "MarkoMarkoMarko" i pohrati ce se vrijednost u string imena.
 
+public class Marko : MonoBehaviour
+{
+    public int count = 3;
+    public string playerName = "Marko";
+    private void Start()
+    {
+        string str = "";
+        for(int i = 0; i < count; i++)
+        {
+            str += playerName;
+        }
+        Debug.Log(str);
+        playerName = str;
+    }
+}
+
 7.) Rafaelina papiga, cije je ime Papigapapigapapigapapigapapiga, cim nauci neku novu rijec, pocinje je
 izgovarati uzastopno bez prestanka. Rafaela je uocila da ce papiga svaku rijec najprije izgovoriti tocno pet
 puta bez stanke. Na primjer, rijec „deda“ bit ce izgovorena kao „dedadedadedadedadeda“.
 Napiši program koji, za zadanu rijec, ispisuje papigin izgovor te rijeci.
 Npr. Deda - DedaDedaDedaDedaDeda, ho - hohohohoho
 
+string imePapige = "Papigapapigapapigapapigapapiga";
+public string rijec;
+
+void Start()
+{
+    Debug.Log(rijec + rijec + rijec + rijec + rijec);
+}
 
 8.) Kada Perica ugleda prirodan broj, on odmah provjeri je li taj broj „nogometan“ ili kako se još kaže „najvažniji sporedan broj na svijetu“. Broj je nogometan ako je u njemu moguce pronaci tri uzastopne znamenke ciji je zbroj jednak deset. Npr. brojevi 442 i 352 su nogometni. Napiši program koji ce za zadani prirodan broj N provjeriti jel on nogometan. (unos je izmedu 100 i 999)
 

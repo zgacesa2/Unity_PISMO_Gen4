@@ -29,6 +29,8 @@ int a=10, b=3;
 int c;
 c = a / b;
 
+Rj: C = 3
+
 4) Napišite skriptu koja će uzeti početne vrijednosti objekta na sceni (njegov scale) i invertati ga (sve scale vrijednosti postaviti na minus)
 
 5) Unesite neku javnu vrijednost, napravite for petlju u start metodi koja će služiti da se u svakom ponavljanju kocka poveća po x osi dok god je uvijet zadovoljen
