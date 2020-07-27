@@ -1,0 +1,6 @@
+1. VI NISTE PLAYER TE RAZINE!
+- Veliki problem level designera je što na razinu gledaju kao da sve znaju o njoj, što je i točno jer znaju. Vidite pogled na scenu i iz perspektive igrača i iz svoje, stvarateljske perspektive. Cilj je da kada radite razinu, igraču bude jasno gdje je šta, a ne vama koji znate gdje je šta i zašto. Zato postoje testeri.
+2. PRETEŠKO
+- Nešto što se zove, olakšati za 50-60-70% ovisi koliko možete/želite/ je potrebno. Kada vi igrate svoju igru vi ste stvoritelj, znate gdje se enemy spawna, koliko jako treba skociti sa platforme na platformu, gdje su easter eggovi, vi znate kada će biti jumpscare itd. Igrač ne zna, zbog toga olakšajte razinu koju vi sa nekom mukom pređete za 50-60-70%.
+3. DOPAMIN - Učite igrača sretnim/pametnim
+- Napravite razinu takvu da igrač ima osjećaj kao da je uspio nešto savladati. Kao da je on odgovoran sa svojim skillom za postignuti jump ili nešto, ali ga nemojte učiti teorijom umiranja (Tomb Rider, Dark Souls itd). Pružite igraču osjećaj uspijeha.

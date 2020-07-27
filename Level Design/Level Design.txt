@@ -1,0 +1,18 @@
+LEVEL DESIGN:
+
+Pravila:
+1. Kada ste gotovi sa razinom, olakšati ju za 60-70%
+
+2. Nikada ne radite preteške razine
+
+3. Imajte očite stvari - Zašto?
+Prosječni korisnik je "prosječan". To znači da ima IQ i logiku razmišljanja prosječnu, u ovom trenu je to 98. Prosječan programer i game developer ima IQ 120, te zbog toga napravi kompliciranije stvari kako bi odgovarale njegovoj logici i njegovom IQ. Problem toga je, prosjek znači da preko 50% ljudi je "gluplje" od vas. A napravite li igru za vas, izgubili ste 50% publiku.
+
+4. Povaćanje težine igre mora biti proporcionalno skillu igrača i pređenim razinama, dakle nema smisla da na razini 17 ubije 15 enemya, a na razini 18 bude 50 enemy. Također ako bude recimo 15 regularnih enemya i jedan novi ili boss, to se mora optimizirati sa checkpoint save sustavom. Tako da igrač može nastaviti od zadnje pređene točke razine.
+
+5. Hook - Nešto što igrača zadrži u igri - Najbitnije pravilo! Jako je teško otkriti bez puno testiranja što je to kod igrača, zato je važno dobro definirati ciljanu publiku. Hook pruža igraču osjećaj sreće kada nešto postigne (Mozak - dopamin, nismo na biologiji, googlajte) 
+Primjeri - 
+Need for Speed - hook - drift, brzina, pobjeda u raceu
+GTA - hook - ilegala, ubijanje, krađa
+Candy Crush - multipovezivanje - delicyous, sweet...
+League of Legends - Kill, Double kill... Epic sound koji daje filing uspijeha

@@ -1,0 +1,39 @@
+ODGOVARAJUĆI FORMATI ZA UNITY:
+3D modeli:
+- .fbx
+- .obj
+- .3ds
+- .dxf
+- .dae
+- .skp
+3D modeli sa instaliranim softverom na računalu:
+- Maya & Max
+	- .mb
+	- .ma
+	- .max
+- Blender
+	- .blend
+- Cinema4D
+	- .c4d
+
+AUDIO:
+- .mp3
+- .ogg
+- .wav
+- .aiff / .aif
+Audio formati sa instaliranim sofverom na računalu:
+- FastTracker 2
+	- .xm
+
+IMAGE / PHOTO:
+- .bmp
+- .tif
+- .tga
+- .jpg
+- .png
+Image formati sa instaliranim softverom na računalu:
+- Photoshop
+	- .psd
+
+Unity file format:
+- UPM (Unity Package Manager)
