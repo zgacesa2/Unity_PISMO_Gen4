@@ -1,0 +1,23 @@
+Do 28.8. napraviti GDD po tamplateu.
+
+*Možete na engleskom, ali možete i na hrvatskom,
+ne smijete nikako na njemackom
+
+**Vježba služi kao priprema toga da budete project
+lead i game designer
+
+Dvije mogucnosti:
+
+Ako imate svoju ideju:
+GDD za svoju ideju (potencijalno završni rad), dakle
+budite svijesti da se može napraviti u 4 mjeseca
+uz edukaciju (samostalno ili uz pomoc modelera i/ili
+drugih kolega)
+
+Ako nemate svoju ideju:
+GDD za neku gotovu video igru (mora biti poznata), 
+prije pocetka pisanja GDD-a za vec postojucu igru
+konzultirati se sa predavacem za dozvolu pisanja za 
+tu konkretnu igru.
+Za gotovu igru nadite pravu ekipu developera te
+koristite prava njihova imena sa pravim ulogama
