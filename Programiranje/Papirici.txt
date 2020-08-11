@@ -1,0 +1,47 @@
+1. Što je audio source ?
+- Audio Source je varijabla.
+
+2. Što je transform ?
+- Transform je komponenta.
+
+3. Koje tri vrste stvari na objektu mijenja transform komponenta ?
+- Transform komponenta mijenja poziciju, rotaciju i veličinu objekta.
+
+4. Nabroji šest vrsti varijabli.
+- int, float, bool, GameObject, AudioSource, Char, Rigidbody...
+
+5. Što je level dizajn ?
+- Level dizajn je logičko-estetska disciplina uz pomoć koje kreiramo levele video igre,
+a to mogu biti lokacije, staze, misije, otvoreni svjetovi itd.
+
+6. Barem jedna mapa iz COD4..
+- Crash
+
+7. Što je bool ?
+- Bool je vrsta varijable u koju možemo spremiti vrijednosti true ili false.
+
+8. Što je Vector 3 ?
+- Vector 3 je vrsta varijable u kojoj se pohranjuju x, z i y komponenta nekog objekta. (kao float vrijednosti)
+
+9. Što je rigidbody i nabroji barem 4 njegove komponente ?
+- Rigidbody je komponenta koja može primati sile kako bi se objekt na sceni mogao kretati puno realističnije uz pomoć fizike.
+- Njegovi dijelovi su mass, drag, angular drag, use gravity, is kinematic itd.
+
+10. Koja stavka u rigidbody mora biti isključena kako na objekt ne bi djelovala gravitacija ?
+- Use gravity
+
+11. Što je varijabla ?
+- Varijabla je ime dodijeljeno prostoru u memoriji s kojom naš program može manipulirati.
+
+12. Nabroj barem četiri 3D objecta koje nam unity nudi po defaultu.
+- Sphere, Cube, Cilinder, Capsule
+
+13. Nabroj tri opcije kojima modificiramo teren kada koristimo brush.
+- Raise or lower terrain, paint holes, smooth hight itd.
+
+14. Kako dodijeljujemo post processing profin na kameru ?
+- Nakon što smo instalirali post processing package stavimo na kameru post processing layer,
+ iza kojeg stavljamo post processing volume te u njemu dodajemo novi post processing profil (PPP)
+
+15. Skripta koja upravlja svim preostalim skriptama vezanim za pojedini projekt ?
+- Game Manager skripta 
