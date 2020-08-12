@@ -45,3 +45,27 @@ a to mogu biti lokacije, staze, misije, otvoreni svjetovi itd.
 
 15. Skripta koja upravlja svim preostalim skriptama vezanim za pojedini projekt ?
 - Game Manager skripta 
+
+16. Koje slovo na kraju sadržava zapis varijable float?
+- f
+
+17. Što je GDD?
+- Game design document je dokumentacija svih informacija neke igre.
+(game analysis, mission statement, genre, platforms, target audience, storyline & characters, gameplay, control scheme, game aesthetics & user interface, schedule & tasks)
+
+18.Zašto je pametno promijeniti boju u play mode-u?
+- Zato što ako nešto radimo na sceni u playmodeu neće nam se ništa spremiti kada izađemo iz playmode-a pa je pametno staviti kričavu boju da smo svijesni da smo u playmodeu.
+
+19.Koja je razlika između GetKeyUp i GetKeyDown?
+- GetKeyUp reagira kada smo digli prst sa tipke dok GetKeyDown reagira kada smo stisnuli tipku.
+
+20. Jedna mapa iz Call Of Duty 2.
+- Toujane, Tounisia
+21. Što je Collider?
+- Komponenta koja definira oblik nekog game object-a.
+
+22. Kakva varijabla je  public game object objekti [];
+- To je error u kodu
+
+23. Kojom naredbom objekte (neprijatelje) okrećemo prema playeru?
+-  Vector3.LookAt
