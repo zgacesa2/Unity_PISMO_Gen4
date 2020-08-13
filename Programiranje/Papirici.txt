@@ -69,3 +69,45 @@ a to mogu biti lokacije, staze, misije, otvoreni svjetovi itd.
 
 23. Kojom naredbom objekte (neprijatelje) okrećemo prema playeru?
 -  Vector3.LookAt
+
+24. Što je tekstura?
+- Tekstura je fizički oblik nekakvog objekta ili površine.
+
+25. Što je bloom?
+- Bloom je grafički efekat kojeg možemo dodati u Post Procesingu Unity-a i on pokušava replicirati osvjetljenje tj light kako reagira nasprem naše kamere.
+
+26. Ako stavimo angular drag na beskonacno, hoce li se objekt prestati rotirati?
+- Neće.
+
+27.  Sto je array?
+- Array je vrsta klase koja nam omogućava da pohranimo više objekata u jednoj varijabli.
+
+28.  Za sto najcesce koristimo rect tool?
+- Koristimo ga najčešće za micanje, rotaciju i scale UI elemenata.
+
+29.  Sto je var?
+- Vrsta varijable u koju zapisujemo nešto i većinom je kraći način zapisivanja varijable ali ne i najbolji način.
+
+30.  3 vrste file.ova koje podrzava audio file/source u unityu?
+- mp3, ogg, wav.
+
+31. Jedna mapa iz mw2?
+- Scrapyard.
+
+32. Nabroji bar 3 level design patterna.
+- Foreshadowing, Guidance, Safe Zone.
+
+33. Nabroji 4 različita post processing effekta i objasni što rade.
+- Motion Blur- vizualni efekt koji replicira kretanje objekta (primjer su racing igrice).
+- Vignette - zatamni rubove screena kako bi veći fokus bio na centru slike ali koristi se i za artistični efekat.
+- Grain - emulira real-world effekt kamere gdje male točkice daju ne-procesiran effekat kao na starijim filmovima.
+- Anti-aliasing - zagladi (smoothing) grafiku da rubovi objekata izgledaju ljepše.
+
+34. Sto ima svaki game object?
+- Komponentu transform.
+
+35. Kako ukljucujemo gravitaciju na rigidbodyu?
+- Označimo tickbox gdje piše use gravity.
+
+36. Sto je mass u rigidbodyu?
+- Masa objekta (u kilogramima) na kojeg dodijelimo komponentu rigidbody.

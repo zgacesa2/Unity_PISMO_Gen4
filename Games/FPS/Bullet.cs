@@ -15,7 +15,12 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //Skinuti health
-        Destroy(this.gameObject);
+        if(collision.gameObject.tag == "Enemy")
+        {
+            //Skinuti health
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+        }
+
     }
 }

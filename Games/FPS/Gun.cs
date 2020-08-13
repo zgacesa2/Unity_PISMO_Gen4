@@ -17,6 +17,8 @@ public class Gun : MonoBehaviour
     public float reloadTime; //Brzina mjenjanaj municije
     float reloadTimeRestart; //Restart vremena mjenjanja municije
     public float recoil; // Trzaj - Ne koristimo
+    public Camera scopeCamera;
+    public Camera mainCamera;
 
     [Header("Fire mode: *Single Fire mode is default*")]
     public bool singleFire; //Pucamo jedan metak po kliku - num 0
@@ -65,7 +67,7 @@ public class Gun : MonoBehaviour
 
         if(Input.GetMouseButton(0) && fireMode == 1 && currentAmmo > 0 && fireRate <= 0)
         {
-            //Metoda pucaj sine
+            Fire();
             fireRate = fireRateRestart;
         }
 
@@ -74,6 +76,16 @@ public class Gun : MonoBehaviour
             currentAmmo = maxAmmo;
             reloadTime = reloadTimeRestart;
             ammoText.text = currentAmmo + "/" + maxAmmo;
+        }
+        if(Input.GetMouseButtonDown(1))
+        {
+            mainCamera.enabled = false;
+            scopeCamera.enabled = true;
+        }
+        else if(Input.GetMouseButtonUp(1))
+        {
+            mainCamera.enabled = true;
+            scopeCamera.enabled = false;
         }
     }
 
