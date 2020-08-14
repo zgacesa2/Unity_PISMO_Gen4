@@ -111,3 +111,79 @@ a to mogu biti lokacije, staze, misije, otvoreni svjetovi itd.
 
 36. Sto je mass u rigidbodyu?
 - Masa objekta (u kilogramima) na kojeg dodijelimo komponentu rigidbody.
+
+
+37. Kojeg oblika je box collider? Mora li collider biti po meshu?
+
+- Oblik kocke, ne mora.
+
+38. Koje komponente sadrzi main camera?
+
+- Kamera, audiolistener, transform.
+
+39. Ako stavimo angular drag na 0, hoce li se objekt rotirati?
+
+- Hoce.
+
+40. Kako bi maknuli rigidbody komponentu sa objekta koristeci skriptu?
+
+- Destroy(GetComponent<Rigidbody>());
+
+41. Sto nama moze znaciti FPS?
+
+- First person shooter, frames per second, first person system.
+
+42. Sto moramo oznaciti na rigidbody komponenti kako na objekt ne bi djelovala fizika?
+
+- isKinematic.
+
+43. Na koji objekt smo stavljali postprocessing file?
+
+- Na kameru.
+
+44. Sto znaci skracenica PISMO?
+
+- Poduzetnicki inkubator Sisacko-Moslovacke zupanije. 
+
+45. Koje platforme drze najvise zarade od videoigara? 
+
+- Mobilne platforme. 
+
+46. Sto je varijabla? 
+
+- Mjesto u memoriji koje sadrzi neku vrijednost.
+
+47. Sto je audiosource?
+
+- Komponenta na objektu koja sadrzi audioclip odnosno zvucni zapis koji mozemo slusati u igrici.
+
+48. Kojeg oblika je sphere collider?
+
+- Sferastog oblika. 
+
+49. Kojom naredbom mozemo pozvati komponentu u skriptu?
+
+- GetComponent<>();
+
+50. Koju komponentu sadrzi svaki Game Object?
+
+- Transform komponentu. 
+
+51. Koji je najskuplji Game Engine? Koliko posto uzima Unreal engine?
+
+- Prije su uzimali 10 posto ako zaradis vise od 3000 dolara. Danas uzimaju 5 posto ako zaradis vise od milijun dolara.
+
+52. U kojem je enginu napravljen Super Seat boy?
+
+- Super meat boy engine.
+
+53. Nabroji pet opcija RigidBodya?
+
+- Mass, gravity, isKinematic, FreezePosition, Drag, Angular Drag...
+
+
+
+
+
+
+
