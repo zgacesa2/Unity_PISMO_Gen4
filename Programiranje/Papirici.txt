@@ -181,6 +181,15 @@ a to mogu biti lokacije, staze, misije, otvoreni svjetovi itd.
 
 - Mass, gravity, isKinematic, FreezePosition, Drag, Angular Drag...
 
+54. Koju komponentu sadrzi svaki UI?
+
+- Rect Transform
+
+55. Ako stavimo drag na 0, hoce li se objekt rotirati?
+
+- Ne
+
+
 
 
 
